@@ -67,12 +67,12 @@ function Navbar() {
     return <nav>
         {dropDownFlag && <div className='row'>
             <div className='col'>
-                <img className='p-1 rounded-4 d-block mx-auto' src={logo} height={'100px'} style={{left:'0! important',marginRight:'auto !important'}}/>
+                <img className='p-1 rounded-4 d-block mx-auto' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' }} />
             </div>
-            <ul className="col-8 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px'}}>
+            <ul className="col-8 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px' }}>
                 <li className='nav-item pt-4'>
                     <Link className='text-black' to="">
-                       Home
+                        Home
                     </Link></li>
                 <li className='nav-item pt-4'>
                     <Link className='text-black' to="services">
@@ -102,8 +102,13 @@ function Navbar() {
             </ul>
         </div>}
         {!dropDownFlag && <div>
-            <div className='navbar-menu-container' style={{ padding: '10px' }}>
-                <HiOutlineBars3 style={{ color: 'white', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
+            <div className='row navbar-menu-container' style={{ padding: '10px' }}>
+                <div className='col'>
+                    <HiOutlineBars3 style={{ color: 'black', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
+                </div>
+                <div className='col'>
+                    <img className='p-1 rounded-4' src={logo} height={'50px'} style={{ left: '0! important', marginRight: 'auto !important' }} />
+                </div>
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='top' >
                 <Box sx={{ width: 250 }} role="presentation" onClick={() => setOpenMenu(false)} onKeyDown={() => setOpenMenu(false)}>
