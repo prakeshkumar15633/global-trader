@@ -19,58 +19,58 @@ import './Services.css'
 function Services() {
     let services = [
         {
-            ind:1,
+            ind: 1,
             img: ser1,
             heading: 'Events Organisation',
             body: 'Bringing your dreams to life, one perfectly planned occasion at a time. Let us handle the details while you enjoy the magic.'
         },
         {
-            ind:2,
+            ind: 2,
             img: ser2,
             heading: 'Brand Promotion',
             body: "Elevate your brand's visibility with strategic campaigns tailored to captivate your audience, ensuring your message resonates loud and clear in the competitive market."
         },
         {
-            ind:3,
+            ind: 3,
             img: ser3,
             heading: 'Installation and Activation',
             body: 'Transforming spaces into captivating experiences, our expert touch breathes life into your vision, ensuring every activation leaves a lasting impression.'
         },
         {
-            ind:4,
+            ind: 4,
             img: ser4,
             heading: 'Corporate Activity',
             body: "Foster team unity and productivity with meticulously planned corporate events, tailored to inspire, engage, and leave a lasting impact on your organization's culture and success."
         },
         {
-            ind:5,
+            ind: 5,
             img: ser5,
             heading: 'Road Show',
             body: 'Take your brand on the road to captivate audiences far and wide, igniting excitement and engagement as you showcase your message, products, and services with flair and impact at every stop.'
         },
         {
-            ind:6,
+            ind: 6,
             img: ser6,
             heading: 'Product Launch',
             body: 'Unveil your innovation with a captivating launch event that leaves a lasting impression, sparking curiosity, excitement, and anticipation among your target audience, setting the stage for success.'
         },
         {
-            ind:7,
+            ind: 7,
             img: ser7,
             heading: 'Manpower and Artist Coordination',
             body: 'Seamlessly synchronize talent and resources, ensuring flawless execution and unforgettable performances that elevate your event to new heights of professionalism and entertainment.'
         },
         {
-            ind:8,
+            ind: 8,
             img: ser8,
             heading: 'Marketing and Publicity',
-            body: "Crafting compelling narratives and deploying strategic campaigns, we amplify your brand's presence, ensuring maximum visibility and engagement to drive success and leave a lasting impression on your audience."
+            body: "Crafting compelling narratives and deploying strategic campaigns, we amplify your brand's presence, ensuring maximum visibility and engagement to drive success."
         },
         {
-            ind:9,
+            ind: 9,
             img: ser9,
             heading: 'Cantervan Indoor / Outdoor',
-            body: 'Versatile and adaptable, our Cantervan seamlessly transitions from indoor elegance to outdoor adventure, providing comfort and luxury wherever your journey takes you, ensuring every moment is an unforgettable experience.'
+            body: 'Versatile and adaptable, our Cantervan seamlessly transitions from indoor elegance to outdoor adventure, providing comfort and luxury wherever your journey takes you.'
         }
     ]
     const settings = {
@@ -85,7 +85,7 @@ function Services() {
     };
     let navigate = useNavigate()
 
-    let [ff,setFf]=useState([false,false,false,false,false,false,false,false,false])
+    let [ff, setFf] = useState([false, false, false, false, false, false, false, false, false])
     let [ii1, setii1] = useState("");
     let [ii2, setii2] = useState("");
     let [ii3, setii3] = useState("");
@@ -112,54 +112,54 @@ function Services() {
     return (
         <div className="service-container">
             <div className="video-text" style={{ position: 'relative' }}>
-                        <video autoPlay muted loop className="background-video" height="300" style={{ width: '100%', objectFit: 'cover' }}>
-                            <source src={video} type='video/mp4' />
-                        </video>
-                        <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <h1 className='text-center'>Welcome to our Services</h1>
-                            <div style={{ marginTop: '50px' }}>
-                            </div>
-                        </div>
+                <video autoPlay muted loop className="background-video" height="300" style={{ width: '100%', objectFit: 'cover' }}>
+                    <source src={video} type='video/mp4' />
+                </video>
+                <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                    <h1 className='text-center'>Welcome to our Services</h1>
+                    <div style={{ marginTop: '50px' }}>
                     </div>
+                </div>
+            </div>
 
             <h2 className="text-center text-black">Our Services</h2>
-            <p className='justify'>
+            <p className='justify px-5 py-2'>
                 Where we specialize in delivering exceptional event management services tailored to your unique needs. From manpower coordination to captivating outdoor campaigns, seamless installations, grand shop openings, and engaging promotion strategies, we offer a comprehensive suite of solutions to make your event a resounding success.
             </p>
             <div className="m-3">
-                    <br />
-                    <div className='row row-cols-1 row-cols-md-3'>
-                        {services.map((service, index) => (
-                            <div className='border border-1' style={{ position: 'relative', minHeight: '350px' }} onMouseEnter={()=>{
-                                let arr=[false,false,false,false,false,false,false,false,false]
-                                arr[service.ind-1]=true
-                                console.log(arr)
-                                setFf(arr)
-                            }} onMouseLeave={()=>{
-                                let arr=[...ff]
-                                arr[service.ind-1]=false
-                                setFf(arr)
-                            }} onClick={()=>{
-                                navigate(`/global-trader/service${index+1}`)
-                            }}>
-                                <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
-                                    <div className="text-center">
-                                        <img src={service.img} style={{ height: '150px' }} />
-                                        <h3 style={{ marginBottom: '15px' }}>{service.heading}</h3>
-                                        <p className='justify'>
-                                            {service.body}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="home-services-card" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '2' }}>
-                                    <h3 className={`home-service-p${service.ind}1 ${ff[service.ind-1]?`home-service-p${service.ind}11`:""} text-center text-white`} style={{position:'relative'}}>{service.heading}</h3>
-                                    <p className={`home-service-p${service.ind}2 ${ff[service.ind-1]?`home-service-p${service.ind}22`:""} text-center text-white`} style={{position:'relative'}}>Read more →</p>
+                <br />
+                <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{width:'85vw'}}>
+                    {services.map((service, index) => (
+                        <div style={{ position: 'relative', minHeight: '350px' }} onMouseEnter={() => {
+                            let arr = [false, false, false, false, false, false, false, false, false]
+                            arr[service.ind - 1] = true
+                            console.log(arr)
+                            setFf(arr)
+                        }} onMouseLeave={() => {
+                            let arr = [...ff]
+                            arr[service.ind - 1] = false
+                            setFf(arr)
+                        }} onClick={() => {
+                            navigate(`/global-trader/service${index + 1}`)
+                        }}>
+                            <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
+                                <div className="text-center">
+                                    <img src={service.img} style={{ height: '150px' }} />
+                                    <h3 style={{ marginBottom: index>6?'50px':'15px' }}>{service.heading}</h3>
+                                    <p className='justify'>
+                                        {service.body}
+                                    </p>
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                            <div className="home-services-card" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '2' }}>
+                                <h3 className={`home-service-p${service.ind}1 ${ff[service.ind - 1] ? `home-service-p${service.ind}11` : ""} text-center text-white`} style={{ position: 'relative' }}>{service.heading}</h3>
+                                <p className={`home-service-p${service.ind}2 ${ff[service.ind - 1] ? `home-service-p${service.ind}22` : ""} text-center text-white`} style={{ position: 'relative' }}>Read more →</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
-                
+            </div>
+
         </div>
     );
 }
