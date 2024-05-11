@@ -10,15 +10,15 @@ import img3 from '../../assets/Home/coordination.jpeg'
 import img4 from '../../assets/Home/event-planning.jpeg'
 import img5 from '../../assets/Home/venue-selection.jpg'
 import img6 from '../../assets/Home/site-management.jpeg'
-import ser1 from '../../assets/Home/ser1.jpg'
-import ser2 from '../../assets/Home/ser2.jpeg'
-import ser3 from '../../assets/Home/ser3.jpg'
-import ser4 from '../../assets/Home/ser4.avif'
-import ser5 from '../../assets/Home/ser5.jpg'
-import ser6 from '../../assets/Home/ser6.jpeg'
-import ser7 from '../../assets/Home/ser7.jpeg'
-import ser8 from '../../assets/Home/ser8.jpeg'
-import ser9 from '../../assets/Home/ser9.webp'
+import ser1 from '../../assets/Home/ser1.png'
+import ser2 from '../../assets/Home/ser2.png'
+import ser3 from '../../assets/Home/ser3.png'
+import ser4 from '../../assets/Home/ser4.png'
+import ser5 from '../../assets/Home/ser5.png'
+import ser6 from '../../assets/Home/ser6.png'
+import ser7 from '../../assets/Home/ser7.png'
+import ser8 from '../../assets/Home/ser8.png'
+import ser9 from '../../assets/Home/ser9.png'
 import l1 from '../../assets/Home/clogo1.png'
 import l2 from '../../assets/Home/clogo2.png'
 import l3 from '../../assets/Home/clogo3.png'
@@ -194,7 +194,7 @@ function Home() {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: !width?3:1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -217,7 +217,7 @@ function Home() {
             <div ref={eleRef} className='home'>
                 <div className='video-text-cards'>
                     <div className="video-text" style={{ position: 'relative' }}>
-                        <video autoPlay muted loop className="background-video" height="300" style={{ width: '100%', objectFit: 'cover' }}>
+                        <video autoPlay muted loop className="background-video" height="500" style={{ width: '100%', objectFit: 'cover' }}>
                             <source src={video} type='video/mp4' />
                         </video>
                         <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -229,7 +229,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="m-3">
+                    {/* <div className="m-3">
                         <h2 className='text-center'>3 steps to design an event</h2>
                         <br />
                         <div className='row row-cols-1 row-cols-md-3'>
@@ -261,7 +261,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 {/* {flag && <div ref={animRef} className='anim-div'>
                     <img src={hand} className={`i i1 ${ii1}`} />
@@ -286,7 +286,7 @@ function Home() {
                 <div className="m-3">
                     <h2 className='text-center'>Our Services</h2>
                     <br />
-                    <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{width:'85vw'}}>
+                    <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '85vw' }}>
                         {services.map((service, index) => (
                             <div style={{ position: 'relative', minHeight: '230px' }} onMouseEnter={() => {
                                 let arr = [false, false, false, false, false, false, false, false, false]
@@ -316,7 +316,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="cards-div" style={{ margin: '30px' }}>
+            {/* <div className="cards-div" style={{ margin: '30px' }}>
                 <div ref={eleRef1} className={`card-single card11 ${isVis1 ? 'card12' : ''} row row-cols-1 row-cols-sm-1 row-cols-lg-2 justify-content-center`}>
                     <div className='m-3 col' style={{ width: `${width ? '85vw' : '40vw'}`, borderRadius: '10px', margin: `${width ? '10px !important' : '0'}` }}>
                         <img className='d-block mx-auto' src={img4} style={{ width: '70%', borderRadius: '10px' }} />
@@ -347,11 +347,11 @@ function Home() {
                         <p>Relax and enjoy your event while we take care of the logistics. Our experienced team will be on-site to oversee every aspect of the event, from setup to teardown, ensuring everything runs smoothly and according to plan.</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <h1 className='text-center'>Why Us</h1>
                 <div className='why-us-div m-3 mx-auto' style={{ width: '70%' }}>
-                    <div className='why-us p-4 rounded-3'>
+                    {!width && <div className='why-us p-4 rounded-3'>
                         <div className='why-us-para p-3 rounded-3' style={!width ? { marginLeft: '40%' } : {}}>
                             <p>
                                 At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
@@ -360,10 +360,26 @@ function Home() {
                                 Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
                             </p>
                         </div>
-                    </div>
+                    </div>}
+                    {width && <div style={{ opacity: 0 }}>
+                        <p>
+                            At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
+                        </p>
+                        <p>
+                            Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
+                        </p>
+                    </div>}
                 </div>
+                {width && <div className='why-us-para p-3 rounded-3 bg-light m-5 border border-1'>
+                    <p>
+                        At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
+                    </p>
+                    <p>
+                        Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
+                    </p>
+                </div>}
             </div>
-            <div className='m-5'>
+            {/* <div className='m-5'>
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2'>
                     <div className='col'>
                         <img className='d-block mx-auto rounded-3' src={contact} style={{ width: !width ? '45vw' : '90%' }} />
@@ -376,7 +392,7 @@ function Home() {
                         <button className='btn btn-primary m-3 text-canter mx-auto d-block' onClick={() => navigate('contact')}>Contact Us</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div>
                 <div className='bg-black p-3 gallery-home' style={{ position: 'relative' }}>
                     <h1 className='text-center text-white'>Our Success Stories</h1>
@@ -412,12 +428,18 @@ function Home() {
                     </div>
                 </div> */}
             </div>
-            <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+            {!width&&<div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                 <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                 <div className='col-3 justify-content-end d-flex'>
                     <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
                 </div>
-            </div>
+            </div>}
+            {width&&<div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                <h3 className='text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
+                <div className='justify-content-end d-flex'>
+                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                </div>
+            </div>}
             <div className='m-3 p-3 rounded-3'>
                 <h1 className='text-center'>Collaboration with our company</h1>
                 <div className='row'>

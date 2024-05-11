@@ -16,6 +16,9 @@ const ContactForm = () => {
     }
     return (
         <div className='contact-bg'>
+            <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                <h3 className='text-white text-center'>Contact Us</h3>
+            </div>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="border p-3 mx-auto bg-light rounded-4 m-5" style={{ width: '75vmin' }}>

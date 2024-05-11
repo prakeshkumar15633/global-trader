@@ -4,15 +4,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useNavigate } from 'react-router-dom';
-import ser1 from '../../assets/Home/ser1.jpg'
-import ser2 from '../../assets/Home/ser2.jpeg'
-import ser3 from '../../assets/Home/ser3.jpg'
-import ser4 from '../../assets/Home/ser4.avif'
-import ser5 from '../../assets/Home/ser5.jpg'
-import ser6 from '../../assets/Home/ser6.jpeg'
-import ser7 from '../../assets/Home/ser7.jpeg'
-import ser8 from '../../assets/Home/ser8.jpeg'
-import ser9 from '../../assets/Home/ser9.webp'
+import ser1 from '../../assets/Home/ser1.png'
+import ser2 from '../../assets/Home/ser2.png'
+import ser3 from '../../assets/Home/ser3.png'
+import ser4 from '../../assets/Home/ser4.png'
+import ser5 from '../../assets/Home/ser5.png'
+import ser6 from '../../assets/Home/ser6.png'
+import ser7 from '../../assets/Home/ser7.png'
+import ser8 from '../../assets/Home/ser8.png'
+import ser9 from '../../assets/Home/ser9.png'
 import video from '../../assets/Services/Services_vid.mp4'
 import './Services.css'
 
@@ -115,7 +115,7 @@ function Services() {
                 <video autoPlay muted loop className="background-video" height="300" style={{ width: '100%', objectFit: 'cover' }}>
                     <source src={video} type='video/mp4' />
                 </video>
-                <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                     <h1 className='text-center'>Welcome to our Services</h1>
                     <div style={{ marginTop: '50px' }}>
                     </div>

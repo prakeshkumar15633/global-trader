@@ -7,10 +7,9 @@
     opacity: 1;
 }
 
-/* .service-container {
-    background-image: url('../../assets/services-background.jpeg');
-    background-size: cover;
-} */
+.service-container {
+    overflow-x: hidden;
+}
 
 .services-card1{
     background-color: rgb(0,0,0,0.1);

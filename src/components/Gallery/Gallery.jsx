@@ -104,31 +104,33 @@ function Gallery() {
 
     return (
         <div>
-            <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='text-white text-center fs-1'>Gallery</h3>
+            <div className="home-hero gallery mb-3">
+                <div className="home-container01 heroContainer">
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'90px'}}>Gallery</h1>
+                </div>
             </div>
-        <Container>
-            <Row>
-                {images.map((imageUrl, index) => (
-                    <Col key={index} xs={6} md={4} lg={3}>
-                        <div className="image-container" onClick={() => handleClick(index)}>
-                            <img src={imageUrl} alt={`Image ${index}`} className="img-fluid" />
-                        </div>
-                    </Col>
-                ))}
-            </Row>
+            <Container>
+                <Row>
+                    {images.map((imageUrl, index) => (
+                        <Col key={index} xs={6} md={4} lg={3}>
+                            <div className="image-container" onClick={() => handleClick(index)}>
+                                <img src={imageUrl} alt={`Image ${index}`} className="img-fluid" />
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
 
-            {/* Modal to display clicked image */}
-            <Modal show={showModal} onHide={() => setShowModal(false)} dialogClassName="custom-modal">
-                <Modal.Body>
-                    <div className="modal-image">
-                        <img src={images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} className="img-fluid" />
-                        <button className="arrow arrow-prev" onClick={handlePrev}>&#10094;</button>
-                        <button className="arrow arrow-next" onClick={handleNext}>&#10095;</button>
-                    </div>
-                </Modal.Body>
-            </Modal>
-        </Container>
+                {/* Modal to display clicked image */}
+                <Modal show={showModal} onHide={() => setShowModal(false)} dialogClassName="custom-modal">
+                    <Modal.Body>
+                        <div className="modal-image">
+                            <img src={images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} className="img-fluid" />
+                            <button className="arrow arrow-prev" onClick={handlePrev}>&#10094;</button>
+                            <button className="arrow arrow-next" onClick={handleNext}>&#10095;</button>
+                        </div>
+                    </Modal.Body>
+                </Modal>
+            </Container>
         </div>
     );
 };

@@ -1,3 +1,9 @@
+.gallery{
+    background-image: url('../../assets/gallery.jpg');
+    background-size: cover;
+    height:70vh;
+}
+
 .image-container {
   position: relative;
   overflow: hidden;

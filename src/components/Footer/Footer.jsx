@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/new-logo.jpg";
+import logo from "../../assets/logo.png";
 import { FaWhatsapp } from 'react-icons/fa';
 import { SiLinkedin, SiYoutube, SiFacebook } from "react-icons/si";
 import "./Footer.css"; // Import CSS file for styling
