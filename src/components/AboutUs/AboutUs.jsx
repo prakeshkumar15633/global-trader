@@ -129,6 +129,25 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="bannerContainer home-banner1 ">
+                <h1 className="home-banner-heading heading2 justify text-center">
+                    Welcome to Our Event Management Company
+                </h1>
+                <span className="home-banner-sub-heading bodySmall justify">
+                    <p className='justify p-5'>
+                        At our event management company, we specialize in creating
+                        unforgettable experiences for all types of events. From
+                        corporate gatherings to weddings and everything in between, we
+                        are dedicated to bringing your vision to life. With our team
+                        of experienced professionals, we handle every detail with
+                        precision and care to ensure a seamless and successful event.
+                        Discover how we can make your next event truly special.
+                    </p>
+                </span>
+                <div className='home-btn-group'>
+                    <button className="buttonFilled" onClick={() => navigate('/global-trader/')}>Discover More</button>
+                </div>
+            </div>
             <div className="m-3">
                 <h2 className='text-center'>3 steps to design an event</h2>
                 <br />
@@ -202,68 +221,7 @@ const Home = (props) => {
                                 Our Key Features
                             </h2>
                             <span className="home-features-sub-heading bodyLarge">
-                                <span>
-                                    <span>
-                                        <span><h3 className='text-center'>Discover what sets us apart in event management</h3></span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                    </span>
-                                    <span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                    </span>
-                                </span>
-                                <span>
-                                    <span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                    </span>
-                                    <span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                        <span>
-                                            <span
-                                                dangerouslySetInnerHTML={{
-                                                    __html: ' ',
-                                                }}
-                                            />
-                                        </span>
-                                    </span>
-                                </span>
+                                <h3 className='text-center'>Discover what sets us apart in event management</h3>
                             </span>
                         </div>
                         <div className="home-container03">
@@ -272,7 +230,7 @@ const Home = (props) => {
                                 heading="Customized Event Planning"
                                 subHeading="Tailored event planning services to meet your specific needs"
                             ></FeatureCard>
-                            <Slider {...settings}>
+                            {/* <Slider {...settings}>
                                 <div>
                                     <img src={t7} alt="Service 7" style={{ height: '60vmin' }} />
                                 </div>
@@ -297,7 +255,7 @@ const Home = (props) => {
                                 <div>
                                     <img src={t15} alt="Service 15" style={{ height: '60vmin' }} />
                                 </div>
-                            </Slider>
+                            </Slider> */}
                         </div>
                     </div>
                 </div>
@@ -305,11 +263,11 @@ const Home = (props) => {
 
                 </div>
             </div>
-            <div className="home-banner">
+            {/* <div className="home-banner">
                 <div className="bannerContainer home-banner1 ">
-                    {/* <h2 className='text-center'>Services We Provide</h2>
-                    <br /> */}
-                    {/* <div className="our-services justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
+                    <h2 className='text-center'>Services We Provide</h2>
+                    <br />
+                    <div className="our-services justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-5">
                         <div className={`col service-card ${showDetails[0] ? 'show-details' : ''}`} onClick={() => navigate('/global-trader/service1')}>
                             <div className="service-icon au-icon">
                                 <img src={t1} alt="Service 1 Icon" style={{ height: '150px' }} className='d-block mx-auto' />
@@ -375,87 +333,26 @@ const Home = (props) => {
                                 )}
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                     <h1 className="home-banner-heading heading2 justify text-center">
                         Welcome to Our Event Management Company
                     </h1>
                     <span className="home-banner-sub-heading bodySmall justify">
-                        <span>
-                            <span>
-                                <p className='justify p-5'>
-                                    At our event management company, we specialize in creating
-                                    unforgettable experiences for all types of events. From
-                                    corporate gatherings to weddings and everything in between, we
-                                    are dedicated to bringing your vision to life. With our team
-                                    of experienced professionals, we handle every detail with
-                                    precision and care to ensure a seamless and successful event.
-                                    Discover how we can make your next event truly special.
-                                </p>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                            </span>
-                            <span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                            </span>
-                        </span>
-                        <span>
-                            <span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                            </span>
-                            <span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                                <span>
-                                    <span
-                                        dangerouslySetInnerHTML={{
-                                            __html: ' ',
-                                        }}
-                                    />
-                                </span>
-                            </span>
-                        </span>
+                        <p className='justify p-5'>
+                            At our event management company, we specialize in creating
+                            unforgettable experiences for all types of events. From
+                            corporate gatherings to weddings and everything in between, we
+                            are dedicated to bringing your vision to life. With our team
+                            of experienced professionals, we handle every detail with
+                            precision and care to ensure a seamless and successful event.
+                            Discover how we can make your next event truly special.
+                        </p>
                     </span>
                     <div className='home-btn-group'>
                         <button className="buttonFilled" onClick={() => navigate('/global-trader/')}>Discover More</button>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
