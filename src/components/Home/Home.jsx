@@ -351,7 +351,7 @@ function Home() {
             <div>
                 <h1 className='text-center'>Why Us</h1>
                 <div className='why-us-div m-3 mx-auto' style={{ width: '70%' }}>
-                    {!width && <div className='why-us p-4 rounded-3'>
+                    <div className='why-us p-4 rounded-3'>
                         <div className='why-us-para p-3 rounded-3' style={!width ? { marginLeft: '40%' } : {}}>
                             <p>
                                 At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
@@ -360,24 +360,8 @@ function Home() {
                                 Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
                             </p>
                         </div>
-                    </div>}
-                    {width && <div style={{ opacity: 0 }}>
-                        <p>
-                            At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
-                        </p>
-                        <p>
-                            Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
-                        </p>
-                    </div>}
+                    </div>
                 </div>
-                {width && <div className='why-us-para p-3 rounded-3 bg-light m-5 border border-1'>
-                    <p>
-                        At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
-                    </p>
-                    <p>
-                        Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
-                    </p>
-                </div>}
             </div>
             {/* <div className='m-5'>
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2'>

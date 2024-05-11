@@ -31,22 +31,17 @@ function Navbar() {
             icon: <MdHomeRepairService style={{ fontSize: '30px' }} />,
         },
         {
+            text: "Gallery",
+            to: "gallery",
+            icon: <MdInsertPhoto style={{ fontSize: '30px' }} />
+        },
+        {
             text: "About Us",
             to: "aboutus",
             icon: <IoIosPeople style={{ fontSize: '30px' }} />,
         },
         {
             text: "Contact",
-            to: "contact",
-            icon: <MdConnectWithoutContact style={{ fontSize: '30px' }} />
-        },
-        {
-            text: "Gallery",
-            to: "gallery",
-            icon: <MdInsertPhoto style={{ fontSize: '30px' }} />
-        },
-        {
-            text: "Request a call",
             to: "contact",
             icon: <MdConnectWithoutContact style={{ fontSize: '30px' }} />
         }
@@ -106,8 +101,8 @@ function Navbar() {
                 <div className='col'>
                     <HiOutlineBars3 style={{ color: 'black', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
                 </div>
-                <div className='col'>
-                    <img className='p-1 rounded-4' src={logo} height={'50px'} style={{ left: '0! important', marginRight: 'auto !important' }} />
+                <div className='col d-flex justify-content-end'>
+                    <img className='p-1 rounded-4' src={logo} height={'70px'} style={{right:0}}/>
                 </div>
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='top' >
