@@ -394,7 +394,7 @@ function Home() {
                             {images.map((card, index) => (
                                 <div className="col text-white p-3">
                                     <div className='p-3 rounded rounded-3' style={{ backgroundColor: 'rgb(0,0,0,0.3)' }}>
-                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '170px' }} />
+                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '150px' }} />
                                         <h3 className='text-center mt-3'>{card.heading}</h3>
                                         <p>{card.body}</p>
                                     </div>
