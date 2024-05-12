@@ -415,11 +415,12 @@ h1 {
 /* Add this CSS to your stylesheet or component */
 
 .service-infoab {
+    height:90%;
+    margin-top: 1.25%;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 30px;
-    padding-bottom: 30px; /* Increase padding to make the card bigger */
-    border: 1px solid transparent;
+    padding-top: 15px;
+    padding-bottom: 15px; /* Increase padding to make the card bigger */
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;

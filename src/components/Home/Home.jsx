@@ -204,19 +204,19 @@ function Home() {
     const images = [
         {
             image:gallery1,
-            heading:'Marriage',
-            body:"This marriage In managing this particular event, every detail was a brushstroke in a masterpiece. From coordinating vendors to ensuring seamless transitions, the day unfolded like a perfectly choreographed symphony. Witnessing the couple's joy affirmed why I love orchestrating such unforgettable moments."
+            heading:'Shop Manpower Management',
+            body:"Maneuvering the shop's manpower entailed intricate scheduling, swift decision-making, and adept problem-solving. Balancing efficiency with adaptability, it underscored the pivotal role of effective management in delivering exceptional service."
         },
         ...(!width ? [
             {
                 image:gallery2,
-                heading:'Birthday Party',
-                body:"That birthday party was a delightful challenge to organize. Juggling RSVPs, coordinating vendors, and ensuring every detail was just right kept me on my toes. Yet, the joy on the guest of honor's face made it a truly rewarding experience."
+                heading:'Shop Opening',
+                body:"Launching the shop was an exhilarating endeavor, blending meticulous planning with bursts of spontaneity. Witnessing the doors finally open to welcome eager customers was a moment of pride, marking the beginning of a new chapter"
             },
             {
                 image:gallery3,
                 heading:'Bike Expo',
-                body:'Running the bike expo was a thrilling ride from start to finish. Balancing exhibitor logistics, attendee engagement, and event flow was a high-stakes adventure. But seeing enthusiasts connecting with the latest gear and sharing their passion made all the hard work exhilaratingly worthwhile.'
+                body:'Running the bike expo was a thrilling ride from start to finish. Balancing exhibitor logistics, attendee engagement, and event flow was a high-stakes adventure. But seeing enthusiasts connecting with the latest gear made all the work worthwhile.'
             }
         ] : [])
     ]
@@ -226,7 +226,7 @@ function Home() {
             <div ref={eleRef} className='home'>
                 <div className='video-text-cards'>
                     <div className="video-text" style={{ position: 'relative' }}>
-                        <video autoPlay muted loop className="background-video" height="500" style={{ width: '100%', objectFit: 'cover' }}>
+                        <video autoPlay muted loop className="background-video" height="350" style={{ width: '100%', objectFit: 'cover' }}>
                             <source src={video} type='video/mp4' />
                         </video>
                         <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
@@ -425,18 +425,6 @@ function Home() {
                     </div>
                 </div> */}
             </div>
-            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
-                <div className='col-3 justify-content-end d-flex'>
-                    <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                </div>
-            </div>}
-            {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
-                <div className='justify-content-end d-flex'>
-                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                </div>
-            </div>}
             <div className='m-3 p-3 rounded-3'>
                 <h1 className='text-center'>Collaboration with our company</h1>
                 <div className='row'>

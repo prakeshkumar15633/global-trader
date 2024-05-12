@@ -113,13 +113,13 @@ const ContactForm = () => {
                     <div>
                         <div className="row row-cols-3 mx-auto" style={{ width: '50%' }}>
                             <a className='col' href="mailto:globaltrader19@gmail.com">
-                                <IoIosMail style={{ fontSize: '5vw' }} />
+                                <IoIosMail className='d-block mx-auto' style={{ fontSize: '6vw' }} />
                             </a>
                             <a className='col' href="tel:8939169177">
-                                <FaPhoneAlt style={{ fontSize: '5vw' }} />
+                                <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: '5vw' }} />
                             </a>
                             <a className='col' href="https://www.google.com/maps/place/...">
-                                <FaLocationDot style={{ fontSize: '5vw' }} />
+                                <FaLocationDot className='d-block mx-auto' style={{ fontSize: '5vw' }} />
                             </a>
                         </div>
                     </div>

@@ -1,3 +1,8 @@
+.service-box{
+    border-radius:0 !important;
+    margin-bottom: 0 !important;
+}
+
 /* Feature Card Container */
 .feature-card-container {
   text-align: center; /* Center-align the text */

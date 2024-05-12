@@ -75,13 +75,13 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="aboutus">
-                        About us
+                    <Link className='text-black p-3' to="gallery">
+                        Gallery
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="gallery">
-                        Gallery
+                    <Link className='text-black p-3' to="aboutus">
+                        About us
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>

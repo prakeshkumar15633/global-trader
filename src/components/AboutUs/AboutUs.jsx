@@ -133,8 +133,8 @@ const Home = (props) => {
                 <h1 className="home-banner-heading heading2 justify text-center">
                     Welcome to Our Event Management Company
                 </h1>
-                <span className="home-banner-sub-heading bodySmall justify">
-                    <p className='justify p-5'>
+                <span className="home-banner-sub-heading bodySmall">
+                    <p className='text-center p-5'>
                         At our event management company, we specialize in creating
                         unforgettable experiences for all types of events. From
                         corporate gatherings to weddings and everything in between, we

@@ -4,16 +4,13 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import './FeatureCard.css'
 const Home = () => {
 
     return (
         <div className="container-fluid">
             <div className='row row-cols-1 row-cols-md-2'>
-                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' }} >
-
-                    <a href="#!">
-                        <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                    </a>
+                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' , borderRight:'1.5px solid blue'}} >
                     <div className="service-infoab text-center">
                         <FontAwesomeIcon icon={faInfoCircle} size="2x" /><h3>Promotion Events</h3>
                         <p className='justify'>
@@ -22,11 +19,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' }} >
-
-                    <a href="#!">
-                        <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                    </a>
+                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' , borderLeft:'1.5px solid blue'}} >
                     <div className="service-infoab text-center">
                         <FontAwesomeIcon icon={faUser} size="2x" /><h3>Shop Opening & Branding</h3>
                         <p className='justify'>
@@ -34,11 +27,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' }}>
-
-                    <a href="#!">
-                        <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                    </a>
+                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' , borderRight:'1.5px solid blue'}}>
                     <div className="service-infoab text-center">
                         <FontAwesomeIcon icon={faLightbulb} size="2x" /><h3>Cantervan indoor / outdoor</h3>
                         <p className='justify'>
@@ -47,10 +36,7 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' }}>
-                    <a href="#!">
-                        <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                    </a>
+                <div className="service-box bg-image hover-overlay hover-zoom shadow-1-strong rounded-5" style={{ marginBottom: '10px' , borderLeft:'1.5px solid blue'}}>
                     <div className="service-infoab text-center">
                         <FontAwesomeIcon icon={faUserGroup} size="2x" /><h3>Manpower</h3>
                         <p className='justify'>
