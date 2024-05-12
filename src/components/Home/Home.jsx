@@ -230,7 +230,7 @@ function Home() {
                             <source src={video} type='video/mp4' />
                         </video>
                         <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <h1 className='text-center'>Welcome to our Event management Website</h1>
+                            <h1 className='text-center'>Welcome to our Global Trader Website</h1>
                             <div style={{ marginTop: '50px' }}>
                                 <button className='btn btn-danger' onClick={() => navigate('services')}>
                                     Get Started
