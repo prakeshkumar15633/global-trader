@@ -26,11 +26,11 @@ import l4 from '../../assets/Home/clogo4.png'
 import video from '../../assets/Home/background-video.mp4'
 import contact from '../../assets/contact-background.jpg'
 import gallery1 from '../../assets/Past-Events/pe1.jpeg';
-import gallery2 from '../../assets/Past-Events/pe2.jpeg';
-import gallery3 from '../../assets/Past-Events/pe3.jpeg';
-import gallery4 from '../../assets/Past-Events/pe4.jpeg';
-import gallery5 from '../../assets/Past-Events/pe5.jpeg';
-import gallery6 from '../../assets/Past-Events/pe6.jpeg';
+import gallery2 from '../../assets/Past-Events/pe12.jpeg';
+import gallery3 from '../../assets/Past-Events/pe17.jpeg';
+// import gallery4 from '../../assets/Past-Events/pe4.jpeg';
+// import gallery5 from '../../assets/Past-Events/pe5.jpeg';
+// import gallery6 from '../../assets/Past-Events/pe6.jpeg';
 import gallery7 from '../../assets/Past-Events/pe7.jpeg';
 import gallery8 from '../../assets/Past-Events/pe8.jpeg';
 import whyusbg from '../../assets/Home/why-us-bg.avif'
@@ -194,7 +194,7 @@ function Home() {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: !width?3:1,
+        slidesToShow: !width ? 3 : 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
@@ -202,13 +202,22 @@ function Home() {
     };
 
     const images = [
-        gallery1,
+        {
+            image:gallery1,
+            heading:'Marriage',
+            body:"This marriage In managing this particular event, every detail was a brushstroke in a masterpiece. From coordinating vendors to ensuring seamless transitions, the day unfolded like a perfectly choreographed symphony. Witnessing the couple's joy affirmed why I love orchestrating such unforgettable moments."
+        },
         ...(!width ? [
-            gallery2,
-            gallery3,
-            gallery4,
-            gallery5,
-            gallery6
+            {
+                image:gallery2,
+                heading:'Birthday Party',
+                body:"That birthday party was a delightful challenge to organize. Juggling RSVPs, coordinating vendors, and ensuring every detail was just right kept me on my toes. Yet, the joy on the guest of honor's face made it a truly rewarding experience."
+            },
+            {
+                image:gallery3,
+                heading:'Bike Expo',
+                body:'Running the bike expo was a thrilling ride from start to finish. Balancing exhibitor logistics, attendee engagement, and event flow was a high-stakes adventure. But seeing enthusiasts connecting with the latest gear and sharing their passion made all the hard work exhilaratingly worthwhile.'
+            }
         ] : [])
     ]
 
@@ -382,9 +391,13 @@ function Home() {
                     <h1 className='text-center text-white'>Our Success Stories</h1>
                     <div className='p-3'>
                         <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                            {images.map((imageUrl, index) => (
-                                <div className="col home-image-container">
-                                    <img src={imageUrl} alt={`Image ${index}`} className='gallery-img rounded-3' />
+                            {images.map((card, index) => (
+                                <div className="col text-white p-3">
+                                    <div className='p-3 rounded rounded-3' style={{ backgroundColor: 'rgb(0,0,0,0.3)' }}>
+                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '170px' }} />
+                                        <h3 className='text-center mt-3'>{card.heading}</h3>
+                                        <p>{card.body}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -412,13 +425,13 @@ function Home() {
                     </div>
                 </div> */}
             </div>
-            {!width&&<div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                 <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                 <div className='col-3 justify-content-end d-flex'>
                     <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
                 </div>
             </div>}
-            {width&&<div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+            {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                 <h3 className='text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                 <div className='justify-content-end d-flex'>
                     <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>

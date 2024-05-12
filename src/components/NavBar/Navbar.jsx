@@ -99,10 +99,10 @@ function Navbar() {
         {!dropDownFlag && <div>
             <div className='row navbar-menu-container' style={{ padding: '10px' }}>
                 <div className='col'>
-                    <HiOutlineBars3 style={{ color: 'black', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
+                    <img className='p-1 rounded-4' src={logo} height={'70px'} style={{ right: 0 }} />
                 </div>
                 <div className='col d-flex justify-content-end'>
-                    <img className='p-1 rounded-4' src={logo} height={'70px'} style={{right:0}}/>
+                    <HiOutlineBars3 style={{ color: 'black', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
                 </div>
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='top' >

@@ -129,7 +129,7 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bannerContainer home-banner1 ">
+            <div className="bannerContainer home-banner1 mt-4">
                 <h1 className="home-banner-heading heading2 justify text-center">
                     Welcome to Our Event Management Company
                 </h1>
@@ -149,7 +149,7 @@ const Home = (props) => {
                 </div>
             </div>
             <div className="m-3">
-                <h2 className='text-center'>3 steps to design an event</h2>
+                <h3 className='text-center fs-1'>3 steps to design an event</h3>
                 <br />
                 <div className='row row-cols-1 row-cols-md-3'>
                     <div className="rounded-5" style={{ marginBottom: '10px' }} >
