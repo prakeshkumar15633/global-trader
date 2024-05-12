@@ -102,7 +102,12 @@ function Navbar() {
                     <img className='p-1 rounded-4' src={logo} height={'70px'} style={{ right: 0 }} />
                 </div>
                 <div className='col d-flex justify-content-end'>
-                    <HiOutlineBars3 style={{ color: 'black', fontSize: '30px' }} onClick={() => setOpenMenu(true)} />
+                <div className='nav-item pt-4 p-3'>
+                    <Link className='requestacall rounded rounded-5 p-2' to="contact">
+                        Request a call
+                    </Link>
+                </div>
+                    <HiOutlineBars3 style={{ color: 'black', fontSize: '30px',marginTop:'20px' }} onClick={() => setOpenMenu(true)} />
                 </div>
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='top' >

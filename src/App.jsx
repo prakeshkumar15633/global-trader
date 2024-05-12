@@ -15,6 +15,7 @@ import Service7 from './components/servicepages/service4';
 import Service8 from './components/servicepages/service8';
 import Service9 from './components/servicepages/service9';
 import Gallery from './components/Gallery/Gallery';
+import { FaWhatsapp } from 'react-icons/fa';
 
 function App() {
     let router = createBrowserRouter([
@@ -77,7 +78,7 @@ function App() {
                 },
                 {
                     path: 'gallery',
-                    element: <Gallery/>
+                    element: <Gallery />
                 }
             ]
         }
@@ -85,6 +86,11 @@ function App() {
     return (
         <div>
             <RouterProvider router={router} />
+            <div className='p-3 rounded-circle' style={{ backgroundColor: 'rgb(0,0,0,0.5)', position: 'fixed', bottom: '10vh', right: '10vw' , zIndex:5}}>
+                <a href="https://wa.me/918939169177" target="_blank" rel="noopener noreferrer" className="whatsapp-icon" style={{ color: 'inherit' }}>
+                    <FaWhatsapp style={{ fontSize: '10vw', color: '#0BF446' }} />
+                </a>
+            </div>
         </div>
     )
 }

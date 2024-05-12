@@ -99,9 +99,9 @@
 /* Styles for the container holding the gallery */
 
 .gallery{
-  background-image: url('../../assets/gal2.jpeg');
+  background-image: url('../../assets/gallery.jpg');
   background-size: cover;
-  height:70vh;
+  height:350px;
 }
 .gallery-container {
   padding: 20px;

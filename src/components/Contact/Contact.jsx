@@ -14,6 +14,20 @@ const ContactForm = () => {
     function handleFormSubmit(contact) {
         console.log(contact)
     }
+    let [width, setWidth] = useState(false)
+
+    setTimeout(() => {
+        const handleScroll = () => {
+            if (window.innerWidth < 800) {
+                setWidth(true)
+            }
+            else {
+                setWidth(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+    }, 100);
     return (
         <div className='contact-bg'>
             <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
@@ -21,7 +35,7 @@ const ContactForm = () => {
             </div>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="border p-3 mx-auto bg-light rounded-4 m-5" style={{ width: '75vmin' }}>
+                    <div className="border border-1 p-3 mx-auto bg-light rounded-4 m-5" style={{ width: '75vmin' }}>
                         <h1 className="display-3 fs-1 text-center mb-3">Contact Us</h1>
                         <form className="mx-auto" onSubmit={handleSubmit(handleFormSubmit)}>
                             <div className="mb-3">
@@ -111,15 +125,15 @@ const ContactForm = () => {
                         </form>
                     </div>
                     <div>
-                        <div className="row row-cols-3 mx-auto" style={{ width: '50%' }}>
+                        <div className="row row-cols-3 mx-auto" style={{ width: width?'60%':'30%' }}>
                             <a className='col' href="mailto:globaltrader19@gmail.com">
-                                <IoIosMail className='d-block mx-auto' style={{ fontSize: '6vw' }} />
+                                <IoIosMail className='d-block mx-auto' style={{ fontSize: width?'11vw':'4vw' }} />
                             </a>
                             <a className='col' href="tel:8939169177">
-                                <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: '5vw' }} />
+                                <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: width?'9vw':'3vw' }} />
                             </a>
                             <a className='col' href="https://www.google.com/maps/place/...">
-                                <FaLocationDot className='d-block mx-auto' style={{ fontSize: '5vw' }} />
+                                <FaLocationDot className='d-block mx-auto' style={{ fontSize: width?'9vw':'3vw' }} />
                             </a>
                         </div>
                     </div>

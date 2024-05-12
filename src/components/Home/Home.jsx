@@ -230,7 +230,7 @@ function Home() {
                             <source src={video} type='video/mp4' />
                         </video>
                         <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <h1 className='text-center'>Welcome to our Global Trader Website</h1>
+                            <h1 className='text-center'>Welcome to our Global Traders Website</h1>
                             <div style={{ marginTop: '50px' }}>
                                 <button className='btn btn-danger' onClick={() => navigate('services')}>
                                     Get Started
@@ -295,9 +295,17 @@ function Home() {
                 <div className="m-3">
                     <h2 className='text-center'>Our Services</h2>
                     <br />
-                    <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '85vw' }}>
+                    <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '80vw' }}>
                         {services.map((service, index) => (
-                            <div style={{ position: 'relative', minHeight: '230px' }} onMouseEnter={() => {
+                            <div style={{ position: 'relative', minHeight: '230px' ,...(
+                                index%3!=2?{
+                                    borderRight:'1px solid rgb(220,220,220)'
+                                }:{}
+                            ),...(
+                                index<6?{
+                                    borderBottom:'1px solid rgb(220,220,220)'
+                                }:{}
+                            )}} onMouseEnter={() => {
                                 let arr = [false, false, false, false, false, false, false, false, false]
                                 arr[service.ind - 1] = true
                                 console.log(arr)
@@ -310,7 +318,7 @@ function Home() {
                                 <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
                                     <div className="text-center">
                                         <img src={service.img} style={{ height: '150px' }} />
-                                        <h3 style={{ margin: '15px' }}>{service.heading}</h3>
+                                        <p style={{ margin: '15px' }}>{service.heading}</p>
                                         {/* <p className='justify'>
                                             {service.body}
                                         </p> */}
@@ -362,10 +370,11 @@ function Home() {
                 <div className='why-us-div m-3 mx-auto' style={{ width: '70%' }}>
                     <div className='why-us p-4 rounded-3'>
                         <div className='why-us-para p-3 rounded-3' style={!width ? { marginLeft: '40%' } : {}}>
-                            <p>
+                            <p className='justify'>
                                 At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
                             </p>
-                            <p>
+                            <br/>
+                            <p className='justify'>
                                 Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
                             </p>
                         </div>

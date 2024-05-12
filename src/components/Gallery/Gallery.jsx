@@ -73,8 +73,8 @@ function Gallery() {
     return (
         <div>
             <div className="home-hero gallery mb-3">
-                <div className="home-container01 galleryContainer" style={{backgroundColor:'rgb(0,0,0,0) !important'}}>
-                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'200px'}}>Gallery</h1>
+                <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Gallery</h1>
                 </div>
             </div>
             <Container>

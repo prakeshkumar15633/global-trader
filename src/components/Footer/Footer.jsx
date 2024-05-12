@@ -1,10 +1,9 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import logo from "../../assets/logo.png";
-import { FaWhatsapp } from 'react-icons/fa';
 import "./Footer.css";
-import { Link , useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-function Footer(){
+function Footer() {
     let navigate = useNavigate()
     let [width, setWidth] = useState(false)
     setTimeout(() => {
@@ -28,9 +27,9 @@ function Footer(){
                 </div>
             </div>}
             {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
+                <h3 className='text-white text-center' style={{fontSize:'20px',marginBottom:'10px'}}>Want to transform your event into a bliss?<br/> Connect to our experts now.</h3>
                 <div className='justify-content-end d-flex'>
-                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
                 </div>
             </div>}
             <footer className='mt-3' id="footer">
@@ -107,10 +106,6 @@ function Footer(){
                             <h2>Contact Us</h2>
                             <div className="separator"></div>
                             <div className="social-media">
-                                <a href="https://wa.me/918939169177" target="_blank" rel="noopener noreferrer" className="whatsapp-icon" style={{ color: '#23ca62' }}>
-                                    <FaWhatsapp />
-                                </a>
-
                             </div>
                             <h6><img src={logo} alt="EnviGo Logo" style={{ width: '150px', height: '150px' }} /></h6>
 

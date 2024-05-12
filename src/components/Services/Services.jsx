@@ -112,10 +112,10 @@ function Services() {
     return (
         <div className="service-container">
             <div className="video-text" style={{ position: 'relative' }}>
-                <video autoPlay muted loop className="background-video" height="300" style={{ width: '100%', objectFit: 'cover' }}>
+                <video autoPlay muted loop className="background-video" height="350" style={{ width: '100%', objectFit: 'cover' }}>
                     <source src={video} type='video/mp4' />
                 </video>
-                <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                     <h1 className='text-center'>Welcome to our Services</h1>
                     <div style={{ marginTop: '50px' }}>
                     </div>
@@ -123,14 +123,23 @@ function Services() {
             </div>
 
             <h2 className="text-center text-black">Our Services</h2>
-            <p className='justify px-5 py-2'>
+            <p className='text-center padded-paragraph'>
                 Where we specialize in delivering exceptional event management services tailored to your unique needs. From manpower coordination to captivating outdoor campaigns, seamless installations, grand shop openings, and engaging promotion strategies, we offer a comprehensive suite of solutions to make your event a resounding success.
             </p>
+
             <div className="m-3">
                 <br />
-                <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{width:'85vw'}}>
+                <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '85vw' }}>
                     {services.map((service, index) => (
-                        <div style={{ position: 'relative', minHeight: '350px' }} onMouseEnter={() => {
+                        <div style={{ position: 'relative', minHeight: '350px',...(
+                            index%3!=2?{
+                                borderRight:'1px solid rgb(220,220,220)'
+                            }:{}
+                        ),...(
+                            index<6?{
+                                borderBottom:'1px solid rgb(220,220,220)'
+                            }:{}
+                        ) }} onMouseEnter={() => {
                             let arr = [false, false, false, false, false, false, false, false, false]
                             arr[service.ind - 1] = true
                             console.log(arr)
@@ -145,15 +154,15 @@ function Services() {
                             <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
                                 <div className="text-center">
                                     <img src={service.img} style={{ height: '150px' }} />
-                                    <h3 style={{ marginBottom: index>6?'50px':'15px' }}>{service.heading}</h3>
-                                    <p className='justify'>
+                                    <h3 style={{ fontSize: '18px',fontWeight:'700',marginBottom:'10px'}}>{service.heading}</h3>
+                                    <p className='justify' style={{ fontSize: '15px' }}>
                                         {service.body}
                                     </p>
                                 </div>
                             </div>
                             <div className="home-services-card" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '2' }}>
-                                <h3 className={`home-service-p${service.ind}1 ${ff[service.ind - 1] ? `home-service-p${service.ind}11` : ""} text-center text-white`} style={{ position: 'relative' }}>{service.heading}</h3>
-                                <p className={`home-service-p${service.ind}2 ${ff[service.ind - 1] ? `home-service-p${service.ind}22` : ""} text-center text-white`} style={{ position: 'relative' }}>Read more →</p>
+                                <h3 className={`services-service-p${service.ind}1 ${ff[service.ind - 1] ?` services-service-p${service.ind}11`: ""} text-center text-white`} style={{ position: 'relative' }}>{service.heading}</h3>
+                                <p className={`services-service-p${service.ind}2 ${ff[service.ind - 1] ? `services-service-p${service.ind}22 `: ""} text-center text-white`} style={{ position: 'relative' }}>Read more →</p>
                             </div>
                         </div>
                     ))}
