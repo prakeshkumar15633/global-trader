@@ -18,100 +18,100 @@ import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
 function Services() {
-  let navigate = useNavigate()
-  const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
+    let navigate = useNavigate()
+    const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
 
-  return (
-    <div className="services">
-     
-      
-      <br />
-      <h2>Corporate activity</h2>
-      <br />
-      <br />
-      <div className="about-us-container">
-        <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-        <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Event Planners</h3>
-              <p className='justify'>
-              Providing skilled professionals to conceptualize, plan, and execute corporate activities tailored to the specific goals and objectives of the organization.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Facilitators and Trainers</h3>
-              <p className='justify'>
-              Offering experienced facilitators and trainers to lead workshops, seminars, team-building exercises, and other interactive activities designed to enhance employee skills and foster a positive corporate culture.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Administrative Support</h3>
-              <p className='justify'>
-              Supplying administrative personnel to handle registration, attendee management, scheduling, and other logistical tasks necessary for the smooth operation of corporate activities.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Technical Support</h3>
-              <p className='justify'>
-              Deploying technicians and IT specialists to set up and manage audio-visual equipment, presentation tools, and other technical aspects of corporate activities, ensuring seamless execution without technical glitches.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Multilingual Staff</h3>
-              <p className='justify'>
-              Offering personnel fluent in multiple languages to accommodate the diverse linguistic needs of employees and guests attending corporate activities, facilitating clear communication and engagement.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>On-site Management</h3>
-              <p className='justify'>
-              Supplying experienced managers to oversee all aspects of corporate activities, including logistics, scheduling, and participant satisfaction, ensuring that objectives are met and any issues are promptly addressed.
-              </p>
-            </div>
-          </div>
-        </div>
-      
-        <br />
-            <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
+    return (
+        <div className="services">
+
+
             <br />
-      </div>
-    </div>
-  );
+            <h2>Corporate activity</h2>
+            <br />
+            <br />
+            <div className="about-us-container">
+                <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Event Planners</h3>
+                            <p className='justify'>
+                                Providing skilled professionals to conceptualize, plan, and execute corporate activities tailored to the specific goals and objectives of the organization.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Facilitators and Trainers</h3>
+                            <p className='justify'>
+                                Offering experienced facilitators and trainers to lead workshops, seminars, team-building exercises, and other interactive activities designed to enhance employee skills and foster a positive corporate culture.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Administrative Support</h3>
+                            <p className='justify'>
+                                Supplying administrative personnel to handle registration, attendee management, scheduling, and other logistical tasks necessary for the smooth operation of corporate activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Technical Support</h3>
+                            <p className='justify'>
+                                Deploying technicians and IT specialists to set up and manage audio-visual equipment, presentation tools, and other technical aspects of corporate activities, ensuring seamless execution without technical glitches.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Multilingual Staff</h3>
+                            <p className='justify'>
+                                Offering personnel fluent in multiple languages to accommodate the diverse linguistic needs of employees and guests attending corporate activities, facilitating clear communication and engagement.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>On-site Management</h3>
+                            <p className='justify'>
+                                Supplying experienced managers to oversee all aspects of corporate activities, including logistics, scheduling, and participant satisfaction, ensuring that objectives are met and any issues are promptly addressed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
+                <br />
+            </div>
+        </div>
+    );
 }
 
 export default Services;

@@ -25,7 +25,7 @@ function Services() {
     <div className="services">
      
       <br />
-      <h2>Installation & Activation</h2>
+      <h3>Installation & Activation</h3>
       <br />
       <br />
       <div className="about-us-container">

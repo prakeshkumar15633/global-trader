@@ -18,98 +18,98 @@ import './service6.css'
 import { useNavigate } from 'react-router-dom';
 
 function Services() {
-  let navigate = useNavigate()
-  const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
+    let navigate = useNavigate()
+    const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
 
-  return (
-    <div className="services">
-     
-      <br />
-      <h2>Road Show</h2>
-      <br />
-      <br />
-      <div className="about-us-container">
-        <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3' style={{fontSize:'14px'}}>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Road Show Coordinators</h3>
-              <p className='justify'>
-              Providing experienced personnel to oversee the logistics and coordination of the entire road show, ensuring seamless execution from start to finish.
-              </p>
+    return (
+        <div className="services">
+
+            <br />
+            <h3>Road Show</h3>
+            <br />
+            <br />
+            <div className="about-us-container">
+                <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3' style={{ fontSize: '14px' }}>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Road Show Coordinators</h3>
+                            <p className='justify'>
+                                Providing experienced personnel to oversee the logistics and coordination of the entire road show, ensuring seamless execution from start to finish.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Promotional Staff</h3>
+                            <p className='justify'>
+                                Offering enthusiastic individuals to engage with the public, distribute promotional materials, and generate interest in the road show.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Drivers and Vehicle Operators</h3>
+                            <p className='justify'>
+                                Supplying skilled drivers and operators to handle transportation logistics, ensuring the safe and efficient movement of equipment and personnel between locations.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Brand Ambassadors</h3>
+                            <p className='justify'>
+                                Deploying knowledgeable brand representatives to interact with attendees, showcase products or services, and create memorable experiences that resonate with the target audience.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(43, 43, 255)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Multilingual Staff</h3>
+                            <p className='justify'>
+                                Offering personnel fluent in multiple languages to cater to diverse audiences encountered during the road show, facilitating effective communication and engagement.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center ">
+                            <h3>On-site Management</h3>
+                            <p className='justify '>
+                                Furnishing experienced managers to oversee the day-to-day operations of the road show, handling logistics, resolving any issues that arise, and ensuring the overall success of the event at each location.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
+                <br />
             </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded"  style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Promotional Staff</h3>
-              <p className='justify'>
-              Offering enthusiastic individuals to engage with the public, distribute promotional materials, and generate interest in the road show.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Drivers and Vehicle Operators</h3>
-              <p className='justify'>
-              Supplying skilled drivers and operators to handle transportation logistics, ensuring the safe and efficient movement of equipment and personnel between locations.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Brand Ambassadors</h3>
-              <p className='justify'>
-              Deploying knowledgeable brand representatives to interact with attendees, showcase products or services, and create memorable experiences that resonate with the target audience.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(43, 43, 255)' }}></div>
-            </a>
-            <div className="service-info text-center">
-              <h3>Multilingual Staff</h3>
-              <p className='justify'>
-              Offering personnel fluent in multiple languages to cater to diverse audiences encountered during the road show, facilitating effective communication and engagement.
-              </p>
-            </div>
-          </div>
-          <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginRight: '15px', marginBottom: '15px', width: 'calc(33.33% - 15px)' }}>
-            <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-            <a href="#!">
-              <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-            </a>
-            <div className="service-info text-center ">
-              <h3>On-site Management</h3>
-              <p className='justify '>
-              Furnishing experienced managers to oversee the day-to-day operations of the road show, handling logistics, resolving any issues that arise, and ensuring the overall success of the event at each location.
-              </p>
-            </div>
-          </div>
         </div>
-
-        <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
-      <br />
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Services;

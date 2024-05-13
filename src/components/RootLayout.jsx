@@ -1,18 +1,29 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "./NavBar/Navbar"
-import { useNavigate } from "react-router-dom"
-import { useEffect } from "react"
+import { useNavigate ,useLocation} from "react-router-dom"
+import { useState, useEffect} from "react"
 import Footer from './Footer/Footer'
 
 function RootLayout(){
-    let navigate=useNavigate()
-    // useEffect(()=>{
-    //     navigate('home')
-    // })
+    let path=useLocation().pathname.split('/')
+    let [width,setWidth]=useState(false)
+    useEffect(()=>{
+        if(path.length>=3){
+            if(!path[2].includes('services')){
+                setWidth(true)
+            }
+            else{
+                setWidth(false)
+            }
+        }
+        console.log(width)
+    })
     return(
         <div>
             <Navbar/>
-            <Outlet/>
+            <div style={{marginLeft:width?'10vw':'',marginRight:width?'10vw':''}}>
+                <Outlet/>
+            </div>
             <Footer/>
         </div>
     )
