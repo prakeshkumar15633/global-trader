@@ -41,7 +41,7 @@ function Navbar() {
             icon: <IoIosPeople style={{ fontSize: '30px' }} />,
         },
         {
-            text: "Contact",
+            text: "Contact Us",
             to: "contact",
             icon: <MdConnectWithoutContact style={{ fontSize: '30px' }} />
         }
@@ -86,7 +86,7 @@ function Navbar() {
                 </li>
                 <li className='nav-item pt-4'>
                     <Link className='text-black p-3' to="contact">
-                        Contact
+                        Contact Us
                     </Link>
                 </li>
                 <li className='nav-item pt-4 p-3'>

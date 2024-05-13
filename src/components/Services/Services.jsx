@@ -146,7 +146,7 @@ function Services() {
                             <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
                                 <div className="text-center">
                                     <img src={service.img} style={{ height: '150px' }} />
-                                    <h3 style={{ fontSize: '18px',fontWeight:'700',marginBottom:'10px'}}>{service.heading}</h3>
+                                    <h3 className='text-primary' style={{ fontSize: '18px',fontWeight:'700',marginBottom:'10px'}}>{service.heading}</h3>
                                     <p className='justify' style={{ fontSize: '15px' }}>
                                         {service.body}
                                     </p>

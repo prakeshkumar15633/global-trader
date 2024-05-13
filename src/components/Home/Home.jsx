@@ -205,7 +205,7 @@ function Home() {
         {
             image:gallery1,
             heading:'Shop Manpower Management',
-            body:"Maneuvering the shop's manpower entailed intricate scheduling, swift decision-making, and adept problem-solving. Balancing efficiency with adaptability, it underscored the pivotal role of effective management in delivering exceptional service."
+            body:"Maneuvering the shop's manpower entailed intricate scheduling, swift decision-making, and adept problem-solving. Balancing efficiency with adaptability, it underscored the pivotal role of management in delivering exceptional service."
         },
         ...(!width ? [
             {
@@ -310,7 +310,7 @@ function Home() {
                                 <div key={index} className="rounded-5 p-3" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', zIndex: '1', marginBottom: '10px' }}>
                                     <div className="text-center">
                                         <img src={service.img} style={{ height: '150px' }} />
-                                        <p style={{ margin: '15px' }}>{service.heading}</p>
+                                        <h5 className='text-primary' style={{ margin: '15px' }}>{service.heading}</h5>
                                         {/* <p className='justify'>
                                             {service.body}
                                         </p> */}
@@ -426,6 +426,18 @@ function Home() {
                     </div>
                 </div> */}
             </div>
+            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                    <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
+                    <div className='col-3 justify-content-end d-flex'>
+                        <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                    </div>
+                </div>}
+                {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                    <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss?<br /> Connect to our experts now.</h3>
+                    <div className='justify-content-end d-flex'>
+                        <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                    </div>
+                </div>}
             <div className='m-3 p-3 rounded-3'>
                 <h1 className='text-center'>Collaboration with our company</h1>
                 <div className='row'>

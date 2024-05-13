@@ -16,6 +16,7 @@ import Service8 from './components/servicepages/service8';
 import Service9 from './components/servicepages/service9';
 import Gallery from './components/Gallery/Gallery';
 import { FaWhatsapp } from 'react-icons/fa';
+// import './App.css'
 
 function App() {
     let router = createBrowserRouter([
@@ -42,7 +43,7 @@ function App() {
                 },
                 {
                     path: 'service1',
-                    element: <Service1 />
+                    element: <Service8 />
                 },
                 {
                     path: 'service2',
@@ -50,7 +51,7 @@ function App() {
                 },
                 {
                     path: 'service3',
-                    element: <Service3 />
+                    element: <Service5 />
                 },
                 {
                     path: 'service4',
@@ -58,7 +59,7 @@ function App() {
                 },
                 {
                     path: 'service5',
-                    element: <Service5 />
+                    element: <Service1 />
                 },
                 {
                     path: 'service6',
@@ -70,11 +71,11 @@ function App() {
                 },
                 {
                     path: 'service8',
-                    element: <Service8 />
+                    element: <Service9 />
                 },
                 {
                     path: 'service9',
-                    element: <Service9 />
+                    element: <Service3 />
                 },
                 {
                     path: 'gallery',

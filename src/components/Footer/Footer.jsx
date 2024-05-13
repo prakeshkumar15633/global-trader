@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import logo from "../../assets/logo.png";
 import "./Footer.css";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Footer() {
+    let path = useLocation().pathname
     let navigate = useNavigate()
     let [width, setWidth] = useState(false)
     setTimeout(() => {
@@ -20,17 +21,19 @@ function Footer() {
     }, 100);
     return (
         <div>
-            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
-                <div className='col-3 justify-content-end d-flex'>
-                    <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                </div>
-            </div>}
-            {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='text-white text-center' style={{fontSize:'20px',marginBottom:'10px'}}>Want to transform your event into a bliss?<br/> Connect to our experts now.</h3>
-                <div className='justify-content-end d-flex'>
-                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                </div>
+            {path!='/global-trader'&&<div>
+                {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                    <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
+                    <div className='col-3 justify-content-end d-flex'>
+                        <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                    </div>
+                </div>}
+                {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                    <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss?<br /> Connect to our experts now.</h3>
+                    <div className='justify-content-end d-flex'>
+                        <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                    </div>
+                </div>}
             </div>}
             <footer className='mt-3' id="footer">
                 <div className="container">

@@ -74,7 +74,7 @@ function Gallery() {
         <div>
             <div className="home-hero gallery mb-3">
                 <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
-                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Gallery</h1>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Gallery Page</h1>
                 </div>
             </div>
             <Container>
@@ -83,8 +83,8 @@ function Gallery() {
                         <Col key={index} xs={6} md={4} lg={3}>
                             <div className="image-container" onClick={() => handleClick(index)}>
                                 <img src={imageUrl} alt={`Image ${index}`} className="img-fluid" />
-                                <p>Title</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro magnam iusto fugiat voluptatem earum molestiae dolorem temporibus, nobis dolorum commodi?</p>
+                                <h5 className='text-center'>Title</h5>
+                                <p>Date</p>
                             </div>
                         </Col>
                     ))}
@@ -94,7 +94,7 @@ function Gallery() {
                 <Modal show={showModal} onHide={() => setShowModal(false)} dialogClassName="custom-modal">
                     <Modal.Body>
                         <div className="modal-image">
-                            <img src={images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} className="img-fluid" />
+                            <img src={images[selectedImageIndex]} alt={`Image ${selectedImageIndex}`} className="img-fluid"/>
                             <button className="arrow arrow-prev" onClick={handlePrev}>&#10094;</button>
                             <button className="arrow arrow-next" onClick={handleNext}>&#10095;</button>
                         </div>
