@@ -297,15 +297,7 @@ function Home() {
                     <br />
                     <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '80vw' }}>
                         {services.map((service, index) => (
-                            <div style={{ position: 'relative', minHeight: '230px' ,...(
-                                index%3!=2?{
-                                    borderRight:'1px solid rgb(220,220,220)'
-                                }:{}
-                            ),...(
-                                index<6?{
-                                    borderBottom:'1px solid rgb(220,220,220)'
-                                }:{}
-                            )}} onMouseEnter={() => {
+                            <div style={{ position: 'relative', minHeight: '230px' ,border: '1px solid rgb(220,220,220)'}} onMouseEnter={() => {
                                 let arr = [false, false, false, false, false, false, false, false, false]
                                 arr[service.ind - 1] = true
                                 console.log(arr)
@@ -403,7 +395,7 @@ function Home() {
                             {images.map((card, index) => (
                                 <div className="col text-white p-3">
                                     <div className='p-3 rounded rounded-3' style={{ backgroundColor: 'rgb(0,0,0,0.3)' }}>
-                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '150px' }} />
+                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '150px', maxWidth:'100%' }} />
                                         <h3 className='text-center mt-3'>{card.heading}</h3>
                                         <p>{card.body}</p>
                                     </div>

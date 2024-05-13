@@ -131,15 +131,7 @@ function Services() {
                 <br />
                 <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '85vw' }}>
                     {services.map((service, index) => (
-                        <div style={{ position: 'relative', minHeight: '350px',...(
-                            index%3!=2?{
-                                borderRight:'1px solid rgb(220,220,220)'
-                            }:{}
-                        ),...(
-                            index<6?{
-                                borderBottom:'1px solid rgb(220,220,220)'
-                            }:{}
-                        ) }} onMouseEnter={() => {
+                        <div style={{ position: 'relative', minHeight: '350px',border: '1px solid rgb(220,220,220)'}} onMouseEnter={() => {
                             let arr = [false, false, false, false, false, false, false, false, false]
                             arr[service.ind - 1] = true
                             console.log(arr)
