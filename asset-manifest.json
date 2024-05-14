@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/global-trader/static/css/main.575d458f.css",
-    "main.js": "/global-trader/static/js/main.24184baa.js",
+    "main.css": "/global-trader/static/css/main.d02ec53d.css",
+    "main.js": "/global-trader/static/js/main.61d02ea5.js",
     "static/js/453.e44fba9c.chunk.js": "/global-trader/static/js/453.e44fba9c.chunk.js",
     "static/media/background-video.mp4": "/global-trader/static/media/background-video.8a78e088a9d5784fc633.mp4",
     "static/media/Services_vid.mp4": "/global-trader/static/media/Services_vid.254ff1cd7d0fb45478f9.mp4",
@@ -34,6 +34,7 @@
     "static/media/1.jpeg": "/global-trader/static/media/1.a5fa2ed264d3393227ce.jpeg",
     "static/media/pe36.jpeg": "/global-trader/static/media/pe36.a5a62dabdb35d67bf6d9.jpeg",
     "static/media/pe11.jpeg": "/global-trader/static/media/pe11.9f46d20951ec9d64ac3a.jpeg",
+    "static/media/Road-Show.png": "/global-trader/static/media/Road-Show.8113bc1363934e69e018.png",
     "static/media/pe31.jpeg": "/global-trader/static/media/pe31.0754a6bc88d33f020ffe.jpeg",
     "static/media/pe38.jpeg": "/global-trader/static/media/pe38.6f9138cc79380a59e615.jpeg",
     "static/media/pe20.jpeg": "/global-trader/static/media/pe20.c5c70ea1be2b10ff3c7a.jpeg",
@@ -60,6 +61,7 @@
     "static/media/pe33.jpeg": "/global-trader/static/media/pe33.937b4eb8419ec5541d08.jpeg",
     "static/media/clogo2.png": "/global-trader/static/media/clogo2.e1894cc1cceb3f5bb148.png",
     "static/media/3.jpg": "/global-trader/static/media/3.c03e222fc76f8b4344ec.jpg",
+    "static/media/marketing-publicity.jpeg": "/global-trader/static/media/marketing-publicity.6fc489e9f2ef9b0ba37b.jpeg",
     "static/media/pe21.jpeg": "/global-trader/static/media/pe21.6ae637882029e8ce769a.jpeg",
     "static/media/clogo1.png": "/global-trader/static/media/clogo1.fff1613f4257b98843f3.png",
     "static/media/pe14.jpeg": "/global-trader/static/media/pe14.c4526b7db9ce60ccd35f.jpeg",
@@ -68,6 +70,7 @@
     "static/media/5.png": "/global-trader/static/media/5.c1db12c93fb30d25ff7d.png",
     "static/media/pe18.jpeg": "/global-trader/static/media/pe18.330127e8d4259c540f01.jpeg",
     "static/media/4.webp": "/global-trader/static/media/4.34437daf83ad4cdf7b06.webp",
+    "static/media/corpotate-activity.jpeg": "/global-trader/static/media/corpotate-activity.ccf011f6b82b5a687360.jpeg",
     "static/media/pe30.jpeg": "/global-trader/static/media/pe30.cb2203798f05b7f979b1.jpeg",
     "static/media/pe26.jpeg": "/global-trader/static/media/pe26.ac2db297c4baaf30766e.jpeg",
     "static/media/hand.png": "/global-trader/static/media/hand.14e6fd4908e5f7ce71b5.png",
@@ -75,6 +78,7 @@
     "static/media/pe8.jpeg": "/global-trader/static/media/pe8.c85ddd77a3985ab568fb.jpeg",
     "static/media/pe7.jpeg": "/global-trader/static/media/pe7.f2878c87ac1484bd84c4.jpeg",
     "static/media/pre-planning.jpg": "/global-trader/static/media/pre-planning.295c751c67bffd867848.jpg",
+    "static/media/event-org.avif": "/global-trader/static/media/event-org.b168f974b296d9b41da1.avif",
     "static/media/1.webp": "/global-trader/static/media/1.b996e0fc4a2f138c5777.webp",
     "static/media/about-us.jpg": "/global-trader/static/media/about-us.04a30c71dcb9909fd1a1.jpg",
     "static/media/5-hands.png": "/global-trader/static/media/5-hands.c36822d9d42c49f02098.png",
@@ -92,12 +96,12 @@
     "static/media/slick.ttf": "/global-trader/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/global-trader/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/global-trader/index.html",
-    "main.575d458f.css.map": "/global-trader/static/css/main.575d458f.css.map",
-    "main.24184baa.js.map": "/global-trader/static/js/main.24184baa.js.map",
+    "main.d02ec53d.css.map": "/global-trader/static/css/main.d02ec53d.css.map",
+    "main.61d02ea5.js.map": "/global-trader/static/js/main.61d02ea5.js.map",
     "453.e44fba9c.chunk.js.map": "/global-trader/static/js/453.e44fba9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.575d458f.css",
-    "static/js/main.24184baa.js"
+    "static/css/main.d02ec53d.css",
+    "static/js/main.61d02ea5.js"
   ]
 }
