@@ -8,12 +8,13 @@ function RootLayout(){
     let path=useLocation().pathname.split('/')
     let [width,setWidth]=useState(false)
     useEffect(()=>{
+        console.log(path,width)
         if(path.length>=3){
-            if(path[2]=='services'||path[2]=='aboutus'||path[2]=='contact'||path[2]=='gallery'){
-                setWidth(false)
+            if(path[2].includes('service')&&path[2]!='services'){
+                setWidth(true)
             }
             else{
-                setWidth(true)
+                setWidth(false)
             }
         }
         else{
