@@ -23,14 +23,18 @@ function Services() {
 
 
     return (
+        <div>
+        <div className="home-hero mb-3 s5">
+            <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Road Show</h1>
+            </div>
+        </div>
         <div className="services">
 
             <br />
             <h2 className="fs-1">Road Show</h2>
             <br />
-            <p className="justify">
-                At Global Trader, we specialize in creating dynamic and engaging Road Shows that captivate audiences and leave a lasting impression. From planning and logistics to execution and promotion, our experienced team handles every aspect of your road show with precision and creativity. Whether you're launching a new product, promoting a brand, or connecting with stakeholders, our road show services are designed to maximize visibility, engagement, and impact. With strategic planning, innovative concepts, and seamless execution, Global Trader ensures that your road show is a memorable and successful experience for all involved.
-            </p>
+           
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3' style={{ fontSize: '14px' }}>
@@ -107,9 +111,10 @@ function Services() {
                         </div>
                     </div>
                 </div>
-
+                <br/>
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />
+            </div>
             </div>
         </div>
     );

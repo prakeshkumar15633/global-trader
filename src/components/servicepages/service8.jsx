@@ -23,15 +23,19 @@ function Services() {
 
 
     return (
-        <div className="services">
+        <div>
+            <div className="home-hero mb-3 s8">
+                <div style={{backgroundColor:'rgb(0,0,0,0.6)', height:'100%'}}>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Marketing and Publicity</h1>
+                </div>
+            </div>
+                <div className="services">
 
 
             <br />
             <h2 className="fs-1">Marketing and Publicity</h2>
             <br />
-            <p className="justify">
-                At Global Trader, we offer comprehensive Marketing and Publicity solutions to elevate your brand's visibility and reach. From strategic planning to execution, our expert team crafts tailored campaigns that resonate with your target audience and drive results. We leverage a mix of traditional and digital marketing channels, along with PR tactics, to generate buzz and increase brand awareness. Whether it's launching a new product or promoting an event, we ensure that your message is heard loud and clear. Trust Global Trader to deliver impactful marketing and publicity strategies that propel your brand to new heights.
-            </p>
+        
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
@@ -111,6 +115,7 @@ function Services() {
                 <br />
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />
+            </div>
             </div>
         </div>
     );

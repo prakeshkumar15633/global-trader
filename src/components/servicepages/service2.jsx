@@ -32,95 +32,97 @@ function Services() {
         arrows: false,
     };
     return (
-        <div className="services">
-
-
-            <br />
-            <h2 className="fs-1">Brand Promotion</h2>
-            <br />
-            <p className="justify">
-                At Global Trader, we understand the importance of effective brand promotion in today's competitive market. Our comprehensive brand promotion services are designed to elevate your brand's visibility, engagement, and reputation. Through strategic marketing campaigns, engaging content creation, targeted advertising, and impactful social media strategies, we ensure that your brand stands out and resonates with your target audience. From building brand awareness to fostering brand loyalty, we work tirelessly to enhance your brand's presence across various channels and touchpoints. With Global Trader, your brand will not only capture attention but also leave a lasting impression in the minds of consumers, driving growth and success for your business.
-            </p>
-            <br />
-            <div className="about-us-container">
-                <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Social Media Campaigns</h3>
-                            <p className='justify'>
-                                Launch targeted social media campaigns across platforms to create buzz and interact with your audience.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Content Marketing</h3>
-                            <p className='justify'>
-                                Develop and distribute high-quality content related to event planning tips and industry trends.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Email Newsletters</h3>
-                            <p className='justify'>
-                                Build and nurture a subscriber list for regular updates about upcoming events and special promotions.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Influencer Partnerships</h3>
-                            <p className='justify'>
-                                Collaborate with influencers to endorse your events and reach a broader audience.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Event Sponsorships</h3>
-                            <p className='justify'>
-                                Secure sponsorships for your events to enhance visibility through logo placement and co-branded promotions.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Community Engagement</h3>
-                            <p className='justify'>
-                                Connect with your local community through participation in community events and sponsorship of charitable initiatives.
-                            </p>
-                        </div>
-                    </div>
+        <div>
+            <div className="home-hero mb-3 s2">
+                <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Brand Promotion</h1>
                 </div>
+            </div>
+            <div className="services">
+                <br />
+                <h2 className="fs-1">Brand Promotion</h2>
+                <br />
+                <br />
+                <div className="about-us-container">
+                    <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Social Media Campaigns</h3>
+                                <p className='justify'>
+                                    Launch targeted social media campaigns across platforms to create buzz and interact with your audience.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Content Marketing</h3>
+                                <p className='justify'>
+                                    Develop and distribute high-quality content related to event planning tips and industry trends.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Email Newsletters</h3>
+                                <p className='justify'>
+                                    Build and nurture a subscriber list for regular updates about upcoming events and special promotions.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Influencer Partnerships</h3>
+                                <p className='justify'>
+                                    Collaborate with influencers to endorse your events and reach a broader audience.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Event Sponsorships</h3>
+                                <p className='justify'>
+                                    Secure sponsorships for your events to enhance visibility through logo placement and co-branded promotions.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                            <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                            <a href="#!">
+                                <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                            </a>
+                            <div className="service-info text-center">
+                                <h3>Community Engagement</h3>
+                                <p className='justify'>
+                                    Connect with your local community through participation in community events and sponsorship of charitable initiatives.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                <br />
-                <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
-                <br />
+                    <br />
+                    <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
+                    <br />
+                </div>
             </div>
         </div>
     );

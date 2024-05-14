@@ -33,14 +33,17 @@ function Services() {
         arrows: false,
     };
     return (
+        <div>
+        <div className="home-hero mb-3 s6">
+            <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Product Launch</h1>
+            </div>
+        </div>
         <div className="services">
 
             <br />
             <h2 className="fs-1">Product Launch</h2>
             <br />
-            <p className="justify">
-                At Global Trader, we excel in orchestrating memorable and impactful Product Launch events. From conceptualization to execution, our dedicated team meticulously plans every detail to ensure a successful launch that captivates your audience and generates excitement. We offer end-to-end solutions, including venue selection, branding, marketing, logistics, and on-site management, tailored to meet your specific needs and objectives. With our expertise and creativity, we turn your vision into reality, creating unforgettable moments that elevate your brand and drive success in the market.
-            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
@@ -117,9 +120,12 @@ function Services() {
                         </div>
                     </div>
                 </div>
+                <br></br>
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
             </div>
         </div>
+        </div>
+
     );
 }
 

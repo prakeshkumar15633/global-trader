@@ -32,15 +32,18 @@ function Services() {
         arrows: false,
     };
     return (
+        <div>
+            <div className="home-hero mb-3 s7">
+                <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Manpower and Artist Coordination</h1>
+                </div>
+            </div>
         <div className="services">
 
 
             <br />
             <h2 className="fs-1">Manpower and Artist Coordination</h2>
             <br />
-            <p className="justify">
-                At Global Trader, we specialize in seamless Manpower and Artist Coordination, ensuring the perfect blend of talent for your events. From sourcing skilled professionals to coordinating with artists, our experienced team handles every aspect with precision and expertise. Whether you need event staffing, talent casting, or artist representation, we streamline the process to ensure a flawless execution. With our extensive network and attention to detail, Global Trader ensures that your events are professionally managed and artistically curated to exceed expectations.
-            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
@@ -120,6 +123,7 @@ function Services() {
                 <br />
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />
+            </div>
             </div>
         </div>
     );

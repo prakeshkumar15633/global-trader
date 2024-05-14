@@ -33,15 +33,19 @@ function Services() {
         arrows: false,
     };
     return (
+        <div>
+             <div className="home-hero mb-3 s9">
+                <div style={{backgroundColor:'rgb(0,0,0,0.4)', height:'100%'}}>
+                    <h1 className="home-hero-heading heading1 text-center" style={{paddingTop:'150px'}}>Cantervan indoor / outdoor</h1>
+                </div>
+            </div>
         <div className="services">
 
 
             <br />
             <h2 className="fs-1">Cantervan indoor / outdoor</h2>
             <br />
-            <p className="justify">
-                At Global Trader, we provide versatile Cantervan solutions for both indoor and outdoor events. Our Cantervans are meticulously designed and equipped to meet your specific needs, whether you're hosting an indoor conference, an outdoor festival, or a mobile marketing campaign. With customizable features and flexible configurations, our Cantervans offer a seamless blend of comfort, functionality, and style. From branding opportunities to logistical support, we ensure that your Cantervan experience exceeds expectations, leaving a lasting impression on your audience.
-            </p>
+        
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
@@ -118,8 +122,10 @@ function Services() {
                         </div>
                     </div>
                 </div>
+                <br/>
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />
+            </div>
             </div>
         </div>
     );
