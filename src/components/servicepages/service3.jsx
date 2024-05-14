@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import t7 from '../../assets/Past-Events/pe13.jpeg';
-import t8 from '../../assets/Past-Events/pe14.jpeg';
-import t9 from '../../assets/Past-Events/pe15.jpeg';
-import t10 from '../../assets/Past-Events/pe16.jpeg';
-import t11 from '../../assets/Past-Events/pe17.jpeg';
-import t12 from '../../assets/Past-Events/pe18.jpeg';
-
-import t1 from '../../assets/Service-3/1.png';
-import t2 from '../../assets/Service-3/2.png';
-import t3 from '../../assets/Service-3/3.png';
-import t4 from '../../assets/Service-3/4.png';
-import t5 from '../../assets/Service-3/5.png';
-import t6 from '../../assets/Service-3/6.png';
+import t7 from '../../assets/Past-Events/pe25.jpeg';
+import t8 from '../../assets/Past-Events/pe26.jpeg';
+import t9 from '../../assets/Past-Events/pe27.jpeg';
+import t10 from '../../assets/Past-Events/pe28.jpeg';
+import t11 from '../../assets/Past-Events/pe29.jpeg';
+import t12 from '../../assets/Past-Events/pe30.jpeg';
+import t1 from '../../assets/Service-3/1.jpg';
+import t2 from '../../assets/Service-3/2.jpg';
+import t3 from '../../assets/Service-3/3.jpeg';
+import t4 from '../../assets/Service-3/4.jpeg';
+import t5 from '../../assets/Service-3/5.jpeg';
+import t6 from '../../assets/Service-3/6.jpg';
 import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -22,99 +21,93 @@ function Services() {
     let navigate = useNavigate()
     const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-    };
     return (
         <div className="services">
 
-
             <br />
-            <h3>Cantervan indoor / outdoor</h3>
+            <h2 className="fs-1">Installation & Activation</h2>
             <br />
+            <p className="justify">
+                At Global Trader, we offer seamless Installation & Activation services to ensure that your products are set up and running smoothly. Our expert technicians handle everything from initial setup to configuration, testing, and activation, ensuring a hassle-free experience for you. Whether it's software installation, hardware setup, or network activation, we ensure that your systems are optimized for performance and functionality. Trust Global Trader to get you up and running quickly and efficiently, so you can focus on what matters most - your business.
+            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Mobile Catering</h3>
+                            <h3>Stage Setup</h3>
                             <p className='justify'>
-                                Offering catering services from the cantervan, providing a variety of food and beverage options for event attendees.
+                                Designing and installing stages tailored to the event's requirements, including platforms, backdrops, and lighting.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Ticketing and Merchandise Sales</h3>
+                            <h3>Lighting and Sound</h3>
                             <p className='justify'>
-                                Converting the cantervan into a mobile ticketing and merchandise store, allowing attendees to purchase tickets and event-related items on-site.
+                                Providing professional lighting and sound system installation for clear audio delivery and immersive event experiences.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Information Hub</h3>
+                            <h3>Décor and Theming</h3>
                             <p className='justify'>
-                                Setting up the cantervan as an information center, providing event maps, schedules, and assistance to attendees.
+                                Creating event décor and theming elements that align with the event's concept and branding.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Interactive Experiences</h3>
+                            <h3>Signage and Wayfinding</h3>
                             <p className='justify'>
-                                Creating interactive installations within the cantervan, such as photo booths or gaming stations, to enhance attendee engagement.
+                                Installing directional signage and wayfinding elements to guide attendees and enhance navigation within the event venue.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Brand Activation</h3>
+                            <h3>Seating Arrangement</h3>
                             <p className='justify'>
-                                Utilizing the cantervan as a platform for brand activation and promotional activities, allowing brands to interact with event attendees directly.
+                                Setting up seating arrangements according to event requirements, ensuring comfort and visibility for attendees.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Mobile Restrooms</h3>
+                            <h3>Exhibit Booths</h3>
                             <p className='justify'>
-                                Providing mobile restroom facilities from the cantervan to ensure attendee comfort and convenience during outdoor events.
+                                Designing and installing exhibit booths for showcasing products, services, and promotional materials during the event.
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <br />
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />
             </div>

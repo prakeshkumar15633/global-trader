@@ -2,111 +2,122 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import t7 from '../../assets/Past-Events/pe19.jpeg';
-import t8 from '../../assets/Past-Events/pe20.jpeg';
-import t9 from '../../assets/Past-Events/pe21.jpeg';
-import t10 from '../../assets/Past-Events/pe22.jpeg';
-import t11 from '../../assets/Past-Events/pe23.jpeg';
-import t12 from '../../assets/Past-Events/pe24.jpeg';
-import t1 from '../../assets/Service-6/1.jpeg';
-import t2 from '../../assets/Service-6/2.webp';
-import t3 from '../../assets/Service-6/3.jpeg';
-import t4 from '../../assets/Service-6/4.jpeg';
-import t5 from '../../assets/Service-6/5.jpeg';
-import t6 from '../../assets/Service-6/6.jpeg';
-import './service6.css'
+import t1 from '../../assets/Service-6/1.webp';
+import t2 from '../../assets/Service-1/2.jpeg';
+import t3 from '../../assets/Service-1/3.jpeg';
+import t4 from '../../assets/Service-1/4.webp';
+import t5 from '../../assets/Service-1/5.jpeg';
+import t6 from '../../assets/Service-1/6.jpeg';
+import t7 from '../../assets/Past-Events/pe1.jpeg';
+import t8 from '../../assets/Past-Events/pe2.jpeg';
+import t9 from '../../assets/Past-Events/pe3.jpeg';
+import t10 from '../../assets/Past-Events/pe4.jpeg';
+import t11 from '../../assets/Past-Events/pe5.jpeg';
+import t12 from '../../assets/Past-Events/pe6.jpeg';
+
+import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
 function Services() {
     let navigate = useNavigate()
     const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
-
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+    };
     return (
         <div className="services">
 
             <br />
-            <h3>Road Show</h3>
+            <h2 className="fs-1">Product Launch</h2>
             <br />
+            <p className="justify">
+                At Global Trader, we excel in orchestrating memorable and impactful Product Launch events. From conceptualization to execution, our dedicated team meticulously plans every detail to ensure a successful launch that captivates your audience and generates excitement. We offer end-to-end solutions, including venue selection, branding, marketing, logistics, and on-site management, tailored to meet your specific needs and objectives. With our expertise and creativity, we turn your vision into reality, creating unforgettable moments that elevate your brand and drive success in the market.
+            </p>
             <br />
             <div className="about-us-container">
-                <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3' style={{ fontSize: '14px' }}>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Road Show Coordinators</h3>
+                            <h3>Social Media Teasers</h3>
                             <p className='justify'>
-                                Providing experienced personnel to oversee the logistics and coordination of the entire road show, ensuring seamless execution from start to finish.
+                                Generate excitement and anticipation by posting sneak peeks and teasers about the upcoming product launch across social media platforms.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Promotional Staff</h3>
+                            <h3>Email Countdown Campaigns</h3>
                             <p className='justify'>
-                                Offering enthusiastic individuals to engage with the public, distribute promotional materials, and generate interest in the road show.
+                                Build anticipation and drive engagement by sending a series of countdown emails leading up to the product launch, revealing exclusive details and offers.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Drivers and Vehicle Operators</h3>
+                            <h3>Influencer Product Reviews</h3>
                             <p className='justify'>
-                                Supplying skilled drivers and operators to handle transportation logistics, ensuring the safe and efficient movement of equipment and personnel between locations.
+                                Amplify your product's reach and credibility by partnering with influencers to review and endorse the new product to their followers.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Brand Ambassadors</h3>
+                            <h3>Pre-launch Giveaways</h3>
                             <p className='justify'>
-                                Deploying knowledgeable brand representatives to interact with attendees, showcase products or services, and create memorable experiences that resonate with the target audience.
+                                Generate buzz and grow your audience by hosting pre-launch giveaways or contests, offering participants a chance to win the new product.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(43, 43, 255)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Multilingual Staff</h3>
-                            <p className='justify'>
-                                Offering personnel fluent in multiple languages to cater to diverse audiences encountered during the road show, facilitating effective communication and engagement.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
-                        <div className="service-info text-center ">
-                            <h3>On-site Management</h3>
-                            <p className='justify '>
-                                Furnishing experienced managers to oversee the day-to-day operations of the road show, handling logistics, resolving any issues that arise, and ensuring the overall success of the event at each location.
+                        <div className="service-info text-center">
+                            <h3>Press Releases and Media Coverage</h3>
+                            <p className='justify'>
+                                Generate publicity and awareness by distributing press releases and securing media coverage in relevant publications and outlets.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Launch Event or Webinar</h3>
+                            <p className='justify'>
+                                Create excitement and engagement by hosting a virtual or in-person launch event or webinar to showcase the new product and interact with your audience.
                             </p>
                         </div>
                     </div>
                 </div>
-
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
-                <br />
             </div>
         </div>
     );

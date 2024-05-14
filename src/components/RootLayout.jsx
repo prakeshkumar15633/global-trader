@@ -9,14 +9,16 @@ function RootLayout(){
     let [width,setWidth]=useState(false)
     useEffect(()=>{
         if(path.length>=3){
-            if(!path[2].includes('services')){
+            if(!path[2]=='services'&&!path[2]=='aboutus'&&!path[2]=='contact'&&!path[2]=='gallery'){
                 setWidth(true)
             }
             else{
                 setWidth(false)
             }
         }
-        console.log(width)
+        else{
+            setWidth(false)
+        }
     })
     return(
         <div>

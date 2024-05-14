@@ -8,12 +8,12 @@ import t9 from '../../assets/Past-Events/pe21.jpeg';
 import t10 from '../../assets/Past-Events/pe22.jpeg';
 import t11 from '../../assets/Past-Events/pe23.jpeg';
 import t12 from '../../assets/Past-Events/pe24.jpeg';
-import t1 from '../../assets/Service-8/1.jpeg';
-import t2 from '../../assets/Service-8/2.jpeg';
+import t1 from '../../assets/Service-8/1.png';
+import t2 from '../../assets/Service-8/2.webp';
 import t3 from '../../assets/Service-8/3.jpeg';
 import t4 from '../../assets/Service-8/4.webp';
 import t5 from '../../assets/Service-8/5.jpeg';
-import t6 from '../../assets/Service-8/6.jpeg';
+import t6 from '../../assets/Service-8/6.png';
 import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -25,81 +25,85 @@ function Services() {
     return (
         <div className="services">
 
+
             <br />
-            <h3>Event Organization</h3>
+            <h2 className="fs-1">Marketing and Publicity</h2>
             <br />
+            <p className="justify">
+                At Global Trader, we offer comprehensive Marketing and Publicity solutions to elevate your brand's visibility and reach. From strategic planning to execution, our expert team crafts tailored campaigns that resonate with your target audience and drive results. We leverage a mix of traditional and digital marketing channels, along with PR tactics, to generate buzz and increase brand awareness. Whether it's launching a new product or promoting an event, we ensure that your message is heard loud and clear. Trust Global Trader to deliver impactful marketing and publicity strategies that propel your brand to new heights.
+            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Event Planners</h3>
+                            <h3>Marketing Strategists</h3>
                             <p className='justify'>
-                                Providing skilled professionals to conceptualize, design, and execute events of varying scales and purposes, ensuring that client objectives are met and attendees have a memorable experience.
+                                Providing experienced professionals to develop comprehensive marketing strategies tailored to the goals and target audience of the campaign, utilizing various channels and tactics for maximum impact.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Creative Team</h3>
+                            <h3>Content Creators</h3>
                             <p className='justify'>
-                                Furnishing creative professionals such as designers, decorators, and stylists to conceptualize and implement themes, decorations, and visual elements that enhance the ambiance and atmosphere of the event.
+                                Offering creative writers, designers, and videographers to produce compelling content such as articles, videos, infographics, and social media posts that resonate with the target audience and convey key messages effectively.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Technical Support</h3>
+                            <h3>Digital Marketers</h3>
                             <p className='justify'>
-                                Supplying technicians and AV specialists to set up and manage audio-visual equipment, lighting, staging, and other technical aspects of the event, ensuring seamless execution of presentations, performances, and entertainment.
+                                Furnishing experts in digital marketing channels such as social media, search engine optimization (SEO), email marketing, and pay-per-click advertising to optimize online visibility, engagement, and conversion rates.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Entertainment Personnel</h3>
+                            <h3> Public Relations Specialists</h3>
                             <p className='justify'>
-                                Providing entertainers, performers, DJs, and MCs to engage and entertain attendees, creating memorable moments and enhancing the overall enjoyment of the event.
+                                Deploying PR professionals to build and maintain positive relationships with media outlets, influencers, and stakeholders, generating favorable press coverage and managing crisis communications effectively.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Security Team</h3>
+                            <h3>Event Coordinators</h3>
                             <p className='justify'>
-                                Furnishing trained security personnel to maintain a safe and secure environment for all attendees, speakers, performers, and VIP guests, preventing disruptions and ensuring the smooth flow of the event.
+                                Providing event coordinators to organize and execute marketing events, such as product launches, promotional campaigns, trade shows, and experiential activations, to enhance brand visibility and engagement with the target audience.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>On-site Management</h3>
+                            <h3>Brand Ambassadors</h3>
                             <p className='justify'>
-                                Offering experienced event managers and coordinators to oversee all aspects of event execution, including timeline management, vendor coordination, attendee satisfaction, and issue resolution, ensuring the event runs seamlessly from start to finish.
+                                Supplying charismatic brand representatives to engage with consumers in-person or online, promoting brand awareness, driving product trials, and fostering positive brand associations through authentic interactions.
                             </p>
                         </div>
                     </div>

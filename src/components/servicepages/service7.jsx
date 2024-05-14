@@ -10,10 +10,10 @@ import t11 from '../../assets/Past-Events/pe23.jpeg';
 import t12 from '../../assets/Past-Events/pe24.jpeg';
 import t1 from '../../assets/Service-7/1.jpeg';
 import t2 from '../../assets/Service-7/2.jpeg';
-import t3 from '../../assets/Service-7/3.png';
-import t4 from '../../assets/Service-7/4.png';
-import t5 from '../../assets/Service-7/5.jpeg';
-import t6 from '../../assets/Service-7/6.png';
+import t3 from '../../assets/Service-7/3.jpg';
+import t4 from '../../assets/Service-7/4.jpeg';
+import t5 from '../../assets/Service-7/5.png';
+import t6 from '../../assets/Service-7/6.jpg';
 import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -21,91 +21,102 @@ function Services() {
     let navigate = useNavigate()
     const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
-
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+    };
     return (
         <div className="services">
 
 
             <br />
-            <h2>Corporate activity</h2>
+            <h2 className="fs-1">Manpower and Artist Coordination</h2>
             <br />
+            <p className="justify">
+                At Global Trader, we specialize in seamless Manpower and Artist Coordination, ensuring the perfect blend of talent for your events. From sourcing skilled professionals to coordinating with artists, our experienced team handles every aspect with precision and expertise. Whether you need event staffing, talent casting, or artist representation, we streamline the process to ensure a flawless execution. With our extensive network and attention to detail, Global Trader ensures that your events are professionally managed and artistically curated to exceed expectations.
+            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Event Planners</h3>
+                            <h3>Talent Database Management</h3>
                             <p className='justify'>
-                                Providing skilled professionals to conceptualize, plan, and execute corporate activities tailored to the specific goals and objectives of the organization.
+                                Streamline your talent search and management process by maintaining a comprehensive database of skilled professionals and artists tailored to your clients' needs.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Facilitators and Trainers</h3>
+                            <h3>Custom Casting Solutions</h3>
                             <p className='justify'>
-                                Offering experienced facilitators and trainers to lead workshops, seminars, team-building exercises, and other interactive activities designed to enhance employee skills and foster a positive corporate culture.
+                                Provide personalized casting services to match clients with the perfect talent or artists for their projects, ensuring a seamless and successful collaboration.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Administrative Support</h3>
+                            <h3>Event Staffing Solutions</h3>
                             <p className='justify'>
-                                Supplying administrative personnel to handle registration, attendee management, scheduling, and other logistical tasks necessary for the smooth operation of corporate activities.
+                                Offer event staffing solutions by providing experienced and reliable manpower for various roles such as event coordinators, ushers, security personnel, and more.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Technical Support</h3>
+                            <h3>Artist Representation Services</h3>
                             <p className='justify'>
-                                Deploying technicians and IT specialists to set up and manage audio-visual equipment, presentation tools, and other technical aspects of corporate activities, ensuring seamless execution without technical glitches.
+                                Act as a liaison between artists and clients, offering representation services to negotiate contracts, manage bookings, and ensure smooth communication and coordination.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Multilingual Staff</h3>
+                            <h3>Training and Development Programs</h3>
                             <p className='justify'>
-                                Offering personnel fluent in multiple languages to accommodate the diverse linguistic needs of employees and guests attending corporate activities, facilitating clear communication and engagement.
+                                Enhance the skills and professionalism of your talent pool by offering training and development programs focused on areas such as communication, customer service, and industry-specific skills.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>On-site Management</h3>
+                            <h3>Feedback and Performance Evaluation</h3>
                             <p className='justify'>
-                                Supplying experienced managers to oversee all aspects of corporate activities, including logistics, scheduling, and participant satisfaction, ensuring that objectives are met and any issues are promptly addressed.
+                                Gather feedback from clients and artists to continuously improve your services and ensure high-quality coordination and satisfaction for all parties involved.
                             </p>
                         </div>
                     </div>
                 </div>
-
                 <br />
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />

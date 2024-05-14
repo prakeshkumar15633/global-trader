@@ -8,12 +8,12 @@ import t9 from '../../assets/Past-Events/pe21.jpeg';
 import t10 from '../../assets/Past-Events/pe22.jpeg';
 import t11 from '../../assets/Past-Events/pe23.jpeg';
 import t12 from '../../assets/Past-Events/pe24.jpeg';
-import t1 from '../../assets/Service-4/1.jpg';
-import t2 from '../../assets/Service-4/2.jpg';
-import t3 from '../../assets/Service-4/3.jpeg';
-import t4 from '../../assets/Service-4/4.jpg';
+import t1 from '../../assets/Service-4/1.jpeg';
+import t2 from '../../assets/Service-4/2.jpeg';
+import t3 from '../../assets/Service-4/3.png';
+import t4 from '../../assets/Service-4/4.png';
 import t5 from '../../assets/Service-4/5.jpeg';
-import t6 from '../../assets/Service-4/6.jpeg';
+import t6 from '../../assets/Service-4/6.png';
 import './service1.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -21,99 +21,94 @@ function Services() {
     let navigate = useNavigate()
     const [showDetails, setShowDetails] = useState([true, true, true, true, true]);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-    };
+
     return (
         <div className="services">
 
 
             <br />
-            <h3>Manpower</h3>
+            <h2 className='fs-1'>Corporate activity</h2>
             <br />
+            <p className="justify">
+                At Global Trader, we specialize in providing comprehensive Corporate Activity solutions tailored to meet the diverse needs of businesses. From team-building events and corporate retreats to seminars, conferences, and product launches, we offer a wide range of services designed to enhance corporate culture, foster collaboration, and drive business success. Our experienced team works closely with clients to conceptualize, plan, and execute corporate activities that align with their objectives and values. With a focus on innovation, creativity, and attention to detail, Global Trader ensures that every corporate activity leaves a lasting impact on participants and contributes to the overall growth and success of the organization.
+            </p>
             <br />
             <div className="about-us-container">
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t1} alt="Service 1 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Event Staffing</h3>
+                            <h3>Event Planners</h3>
                             <p className='justify'>
-                                Providing trained personnel for various roles such as event coordinators, ushers, registration assistants, and security personnel.
+                                Providing skilled professionals to conceptualize, plan, and execute corporate activities tailored to the specific goals and objectives of the organization.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t2} alt="Service 2 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
-                            <h3>Hospitality Staffing</h3>
+                            <h3>Facilitators and Trainers</h3>
                             <p className='justify'>
-                                Offering skilled staff for catering, bartending, and hospitality services to ensure excellent guest experiences.
+                                Offering experienced facilitators and trainers to lead workshops, seminars, team-building exercises, and other interactive activities designed to enhance employee skills and foster a positive corporate culture.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t3} alt="Service 3 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                        <a href="#!">
+                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
+                        </a>
+                        <div className="service-info text-center">
+                            <h3>Administrative Support</h3>
+                            <p className='justify'>
+                                Supplying administrative personnel to handle registration, attendee management, scheduling, and other logistical tasks necessary for the smooth operation of corporate activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
                             <h3>Technical Support</h3>
                             <p className='justify'>
-                                Supplying technicians and AV specialists for setting up and managing audio-visual equipment, lighting, and technical aspects of the event.
+                                Deploying technicians and IT specialists to set up and manage audio-visual equipment, presentation tools, and other technical aspects of corporate activities, ensuring seamless execution without technical glitches.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t4} alt="Service 4 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
-                        <a href="#!">
-                            <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
-                        </a>
-                        <div className="service-info text-center">
-                            <h3>Brand Ambassadors</h3>
-                            <p className='justify'>
-                                Deploying brand representatives and product demonstrators to engage with attendees and promote products/services.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t5} alt="Service 5 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
                             <h3>Multilingual Staff</h3>
                             <p className='justify'>
-                                Providing personnel fluent in multiple languages to cater to diverse audiences and facilitate effective communication.
+                                Offering personnel fluent in multiple languages to accommodate the diverse linguistic needs of employees and guests attending corporate activities, facilitating clear communication and engagement.
                             </p>
                         </div>
                     </div>
-                    <div className="bg-light col mb-4 bg-image hover-overlay hover-zoom shadow-1-strong rounded" style={{ marginBottom: '15px' }}>
-                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-lg mx-auto d-block" style={{ height: '250px', width: '450px' }} />
+                    <div className="bg-light col bg-image hover-overlay hover-zoom shadow-1-strong border border-1 p-3">
+                        <img src={t6} alt="Service 6 Icon" className="img-fluid rounded-3 mx-auto d-block" style={{ height: '250px', width: '450px' }} />
                         <a href="#!">
                             <div className="mask" style={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }}></div>
                         </a>
                         <div className="service-info text-center">
                             <h3>On-site Management</h3>
                             <p className='justify'>
-                                Offering experienced event managers to oversee all aspects of event execution, ensuring smooth operations and timely resolution of any issues.
+                                Supplying experienced managers to oversee all aspects of corporate activities, including logistics, scheduling, and participant satisfaction, ensuring that objectives are met and any issues are promptly addressed.
                             </p>
                         </div>
                     </div>
                 </div>
+
                 <br />
                 <button className='primary-button mx-auto d-block' onClick={() => navigate('/global-trader/contact')}>Get This Service</button>
                 <br />

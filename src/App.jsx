@@ -5,13 +5,13 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContactForm from './components/Contact/Contact';
 import RootLayout from "./components/RootLayout";
 import ErrorRoute from "./components/ErrorRoute";
-import Service1 from './components/servicepages/service6';
+import Service1 from './components/servicepages/service1';
 import Service2 from './components/servicepages/service2';
 import Service3 from './components/servicepages/service3';
-import Service4 from './components/servicepages/service7';
+import Service4 from './components/servicepages/service4';
 import Service5 from './components/servicepages/service5';
-import Service6 from './components/servicepages/service5';
-import Service7 from './components/servicepages/service4';
+import Service6 from './components/servicepages/service6';
+import Service7 from './components/servicepages/service7';
 import Service8 from './components/servicepages/service8';
 import Service9 from './components/servicepages/service9';
 import Gallery from './components/Gallery/Gallery';
@@ -43,7 +43,7 @@ function App() {
                 },
                 {
                     path: 'service1',
-                    element: <Service8 />
+                    element: <Service1 />
                 },
                 {
                     path: 'service2',
@@ -51,7 +51,7 @@ function App() {
                 },
                 {
                     path: 'service3',
-                    element: <Service5 />
+                    element: <Service3 />
                 },
                 {
                     path: 'service4',
@@ -59,7 +59,7 @@ function App() {
                 },
                 {
                     path: 'service5',
-                    element: <Service1 />
+                    element: <Service5 />
                 },
                 {
                     path: 'service6',
@@ -71,11 +71,11 @@ function App() {
                 },
                 {
                     path: 'service8',
-                    element: <Service9 />
+                    element: <Service8 />
                 },
                 {
                     path: 'service9',
-                    element: <Service3 />
+                    element: <Service9 />
                 },
                 {
                     path: 'gallery',
