@@ -293,7 +293,7 @@ function Home() {
                     </div>
                 </div>} */}
                 <div className="m-3">
-                    <h2 className='text-center'>Our Services</h2>
+                    <h2 className='text-center text-primary'>Our Services</h2>
                     <br />
                     <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '80vw' }}>
                         {services.map((service, index) => (
@@ -358,7 +358,7 @@ function Home() {
                 </div>
             </div> */}
             <div>
-                <h1 className='text-center'>Why Us</h1>
+                <h1 className='text-center text-primary'>Why Us</h1>
                 <div className='why-us-div m-3 mx-auto' style={{ width: '70%' }}>
                     <div className='why-us p-4 rounded-3'>
                         <div className='why-us-para p-3 rounded-3' style={!width ? { marginLeft: '40%' } : {}}>
@@ -439,7 +439,7 @@ function Home() {
                     </div>
                 </div>}
             <div className='m-3 p-3 rounded-3'>
-                <h1 className='text-center'>Collaboration with our company</h1>
+                <h1 className='text-center text-primary'>Collaboration with our company</h1>
                 <div className='row'>
                     <Slider {...settings} infinite className='mx-auto'>
                         <div>

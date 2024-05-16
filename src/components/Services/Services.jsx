@@ -122,7 +122,7 @@ function Services() {
                 </div>
             </div>
 
-            <h2 className="text-center text-black">Our Services</h2>
+            <h2 className="text-center text-primary">Our Services</h2>
             <p className='text-center padded-paragraph'>
                 Where we specialize in delivering exceptional event management services tailored to your unique needs. From manpower coordination to captivating outdoor campaigns, seamless installations, grand shop openings, and engaging promotion strategies, we offer a comprehensive suite of solutions to make your event a resounding success.
             </p>
