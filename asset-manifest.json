@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/global-trader/static/css/main.1916e4ef.css",
-    "main.js": "/global-trader/static/js/main.7fa8ca58.js",
+    "main.js": "/global-trader/static/js/main.bbca4e8b.js",
     "static/js/453.e44fba9c.chunk.js": "/global-trader/static/js/453.e44fba9c.chunk.js",
     "static/media/background-video.mp4": "/global-trader/static/media/background-video.8a78e088a9d5784fc633.mp4",
     "static/media/Services_vid.mp4": "/global-trader/static/media/Services_vid.254ff1cd7d0fb45478f9.mp4",
@@ -13,7 +13,6 @@
     "static/media/installation-activation.png": "/global-trader/static/media/installation-activation.8d69f1f98c71ffa73535.png",
     "static/media/6.png": "/global-trader/static/media/6.9fa356677ba06801cb4b.png",
     "static/media/promotion-events.png": "/global-trader/static/media/promotion-events.984c874cd1ebaa7d4444.png",
-    "static/media/clogo4.png": "/global-trader/static/media/clogo4.a457a4827ce0a71ef6ac.png",
     "static/media/6.jpeg": "/global-trader/static/media/6.9a4fe6c88f8216c9ce88.jpeg",
     "static/media/logo.png": "/global-trader/static/media/logo.40633e3c54b9e07d1c44.png",
     "static/media/shop-opening-branding.png": "/global-trader/static/media/shop-opening-branding.294144ab051aaca6f214.png",
@@ -59,11 +58,9 @@
     "static/media/manpower.png": "/global-trader/static/media/manpower.be3f77962ae4c7ddb9ff.png",
     "static/media/pe16.jpeg": "/global-trader/static/media/pe16.e62a44ce7f4b646e55c0.jpeg",
     "static/media/pe33.jpeg": "/global-trader/static/media/pe33.937b4eb8419ec5541d08.jpeg",
-    "static/media/clogo2.png": "/global-trader/static/media/clogo2.e1894cc1cceb3f5bb148.png",
     "static/media/3.jpg": "/global-trader/static/media/3.c03e222fc76f8b4344ec.jpg",
     "static/media/marketing-publicity.jpeg": "/global-trader/static/media/marketing-publicity.6fc489e9f2ef9b0ba37b.jpeg",
     "static/media/pe21.jpeg": "/global-trader/static/media/pe21.6ae637882029e8ce769a.jpeg",
-    "static/media/clogo1.png": "/global-trader/static/media/clogo1.fff1613f4257b98843f3.png",
     "static/media/pe14.jpeg": "/global-trader/static/media/pe14.c4526b7db9ce60ccd35f.jpeg",
     "static/media/pe32.jpeg": "/global-trader/static/media/pe32.38e26acc4f5384d24d9c.jpeg",
     "static/media/pe10.jpeg": "/global-trader/static/media/pe10.fa7d1ae63596d0e8cedf.jpeg",
@@ -78,13 +75,14 @@
     "static/media/pe8.jpeg": "/global-trader/static/media/pe8.c85ddd77a3985ab568fb.jpeg",
     "static/media/pe7.jpeg": "/global-trader/static/media/pe7.f2878c87ac1484bd84c4.jpeg",
     "static/media/pre-planning.jpg": "/global-trader/static/media/pre-planning.295c751c67bffd867848.jpg",
+    "static/media/clogo3.png": "/global-trader/static/media/clogo3.0ca1f1887f93da9ed479.png",
     "static/media/event-org.avif": "/global-trader/static/media/event-org.b168f974b296d9b41da1.avif",
     "static/media/1.webp": "/global-trader/static/media/1.b996e0fc4a2f138c5777.webp",
     "static/media/about-us.jpg": "/global-trader/static/media/about-us.04a30c71dcb9909fd1a1.jpg",
     "static/media/5-hands.png": "/global-trader/static/media/5-hands.c36822d9d42c49f02098.png",
     "static/media/coordination.jpeg": "/global-trader/static/media/coordination.9313c2a5db45b44b1e49.jpeg",
-    "static/media/clogo3.png": "/global-trader/static/media/clogo3.faed58bdb4c0d5a76c2c.png",
     "static/media/2.jpg": "/global-trader/static/media/2.fbce1f6280906b0fa7d3.jpg",
+    "static/media/clogo4.png": "/global-trader/static/media/clogo4.57ce011822ca87037ca6.png",
     "static/media/event-planning.jpeg": "/global-trader/static/media/event-planning.9086ac435d44a8cf3b3b.jpeg",
     "static/media/contact-background.jpg": "/global-trader/static/media/contact-background.7bd9d363989d59923310.jpg",
     "static/media/ser5.png": "/global-trader/static/media/ser5.1ddd7af7250b2d8c960e.png",
@@ -97,11 +95,11 @@
     "static/media/slick.woff": "/global-trader/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/global-trader/index.html",
     "main.1916e4ef.css.map": "/global-trader/static/css/main.1916e4ef.css.map",
-    "main.7fa8ca58.js.map": "/global-trader/static/js/main.7fa8ca58.js.map",
+    "main.bbca4e8b.js.map": "/global-trader/static/js/main.bbca4e8b.js.map",
     "453.e44fba9c.chunk.js.map": "/global-trader/static/js/453.e44fba9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1916e4ef.css",
-    "static/js/main.7fa8ca58.js"
+    "static/js/main.bbca4e8b.js"
   ]
 }
