@@ -97,7 +97,11 @@ function Footer() {
                         <div className="col-lg-3 text-white">
                             <h2>Resources</h2>
                             <div className="separator"></div>
-                            <p>Blog</p>
+                            <Link to='/global-trader/gallery'>
+                                <p className='text-white'>
+                                    Blog
+                                </p>
+                            </Link>
                             <Link to='/global-trader/gallery'>
                                 <p className='text-white'>
                                     Gallery

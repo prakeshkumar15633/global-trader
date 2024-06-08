@@ -130,7 +130,7 @@ const Home = (props) => {
                 </div>
             </div>
             <div className="bannerContainer home-banner1 mt-4">
-                <h1 className="home-banner-heading heading2 justify text-center">
+                <h1 className="home-banner-heading heading2 justify text-center text-primary">
                     Welcome to Global Trader
                 </h1>
                 <span className="home-banner-sub-heading bodySmall">
@@ -149,13 +149,13 @@ const Home = (props) => {
                 </div>
             </div>
             <div className="m-3">
-                <h3 className='text-center fs-1'>3 Steps To Design An Event</h3>
+                <h3 className='text-center fs-1 text-primary'>3 Steps To Design An Event</h3>
                 <br />
                 <div className='row row-cols-1 row-cols-md-3'>
                     <div className="rounded-5" style={{ marginBottom: '10px' }} >
                         <div className="home-card text-center">
                             <img className='rounded-circle' src={img1} style={{ width: '150px' }} />
-                            <h3 style={{ marginBottom: '15px' }}>Pre-Event Planning</h3>
+                            <h3 className='text-primary' style={{ marginBottom: '15px' }}>Pre-Event Planning</h3>
                             <p className='text-center p-3' style={{fontSize:'15px'}}>
                                 We strategize meticulously to set objectives, secure resources, and promote the event effectively.
                             </p>
@@ -164,7 +164,7 @@ const Home = (props) => {
                     <div className="rounded-5" style={{ marginBottom: '10px' }}>
                         <div className="home-card text-center">
                             <img className='rounded-circle' src={img2} style={{ width: '150px' }} />
-                            <h3 style={{ marginBottom: '15px' }}>Logistics Management</h3>
+                            <h3 className='text-primary' style={{ marginBottom: '15px' }}>Logistics Management</h3>
                             <p className='text-center p-3' style={{fontSize:'15px'}}>
                                 We coordinate seamlessly to ensure smooth operations, from equipment setup to attendee logistics.
                             </p>
@@ -173,7 +173,7 @@ const Home = (props) => {
                     <div className="rounded-5" style={{ marginBottom: '10px' }}>
                         <div className="home-card text-center">
                             <img className='rounded-circle' src={img3} style={{ width: '150px' }} />
-                            <h3 style={{ marginBottom: '15px' }}>Coordination</h3>
+                            <h3 className='text-primary' style={{ marginBottom: '15px' }}>Coordination</h3>
                             <p className='text-center' style={{fontSize:'15px',padding:'6px'}}>
                                 We execute flawlessly, overseeing all aspects of the event to guarantee a memorable and successful experience for attendees.
                             </p>
@@ -217,7 +217,7 @@ const Home = (props) => {
                 <div className="featuresContainer">
                     <div className="home-features1">
                         <div className="home-container02">
-                            <h2 className="home-features-heading heading2 text-center">
+                            <h2 className="home-features-heading heading2 text-center text-primary">
                                 Our Key Features
                             </h2>
                             <span className="home-features-sub-heading bodyLarge">

@@ -44,13 +44,13 @@ const ContactForm = () => {
     }, 100);
     return (
         <div className='contact-bg'>
-            <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                <h3 className='text-white text-center'>Contact Us</h3>
+            <div className='py-2 px-2 row mb-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                <h1 className='text-white text-center'>Contact Us</h1>
             </div>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="border border-1 p-3 mx-auto bg-light rounded-4 m-5" style={{ width: '75vmin' }}>
-                        <h1 className="display-3 fs-1 text-center mb-3">Contact Us</h1>
+                    <div className="border border-1 px-4 mx-auto bg-light rounded-3 m-3" style={{ width: '75vmin' }}>
+                        <h1 className="display-3 fs-2 fw-normal text-bold text-center mb-3 text-primarytext-primary">Contact Us</h1>
                         <form ref={form} className="mx-auto" onSubmit={handleSubmit(handleFormSubmit)}>
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">
@@ -59,6 +59,7 @@ const ContactForm = () => {
                                 <input
                                     type="text"
                                     id="name"
+                                    placeholder='Name'
                                     className="form-control shadow-sm"
                                     {...register("from_name", {
                                         required: true,
@@ -75,6 +76,7 @@ const ContactForm = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    placeholder='Email'
                                     className="form-control shadow-sm"
                                     {...register("from_email", {
                                         required: true,
@@ -91,6 +93,7 @@ const ContactForm = () => {
                                 <input
                                     type="number"
                                     id="contactno"
+                                    placeholder='Contact No'
                                     className="form-control shadow-sm"
                                     {...register("contact_no", {
                                         required: true,
@@ -111,6 +114,7 @@ const ContactForm = () => {
                                 <input
                                     type="text"
                                     id="companyname"
+                                    placeholder='Company Name'
                                     className="form-control shadow-sm"
                                     {...register("company_name", {
                                         required: true,
@@ -143,7 +147,7 @@ const ContactForm = () => {
                                     <p className="text-danger">Service is required</p>
                                 )}
                             </div>
-                            <button className="btn btn-success d-block mb-3">Submit</button>
+                            <button className="btn btn-success d-block mx-auto mb-3">Submit</button>
                         </form>
                     </div>
                     <div>
@@ -152,10 +156,10 @@ const ContactForm = () => {
                                 <IoIosMail className='d-block mx-auto' style={{ fontSize: width ? '11vw' : '4vw' }} />
                             </a>
                             <a className='col' href="tel:8939169177">
-                                <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: width ? '9vw' : '3vw' }} />
+                                <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: width ? '7.5vw' : '2.8vw', marginTop:width?'1vw':'0.5vw' }} />
                             </a>
                             <a className='col' href="https://www.google.com/maps/place/...">
-                                <FaLocationDot className='d-block mx-auto' style={{ fontSize: width ? '9vw' : '3vw' }} />
+                                <FaLocationDot className='d-block mx-auto' style={{ fontSize: width ? '7.5vw' : '2.8vw', marginTop:width?'1vw':'0.5vw' }} />
                             </a>
                         </div>
                     </div>

@@ -87,9 +87,10 @@ function App() {
     return (
         <div>
             <RouterProvider router={router} />
-            <div className='p-3 rounded-circle' style={{ backgroundColor: 'rgb(0,0,0,0.5)', position: 'fixed', bottom: '10vh', right: '10vw' , zIndex:5}}>
+            <div className='p-1 rounded-circle' style={{ backgroundColor: '#0BF446', position: 'fixed', bottom: '10px', right: '10px' , zIndex:5}}>
                 <a href="https://wa.me/918939169177" target="_blank" rel="noopener noreferrer" className="whatsapp-icon" style={{ color: 'inherit' }}>
-                    <FaWhatsapp style={{ fontSize: '10vw', color: '#0BF446' }} />
+                    <FaWhatsapp style={{ fontSize: '50px', color: 'white' }} />
+                    {/* color: '#0BF446' */}
                 </a>
             </div>
         </div>

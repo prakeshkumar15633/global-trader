@@ -13,7 +13,8 @@ import { IoIosPeople } from "react-icons/io";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
 import { MdInsertPhoto } from "react-icons/md";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo-without-text.png'
+import logotext from '../../assets/logo-text.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -59,10 +60,13 @@ function Navbar() {
     useEffect(() => {
         handleResize()
     })
-    return <nav>
+    return <nav className='m-2'>
         {dropDownFlag && <div className='row'>
             <div className='col'>
-                <img className='p-1 rounded-4 d-block mx-auto' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' }} />
+                <div className='d-flex justify-content-center'>
+                    <img className='p-1 d-blok mx-auto' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' ,borderRadius:'10px'}} />
+                    <img src={logotext} style={{ height: '85px',marginTop:'10px' }} />
+                </div>
             </div>
             <ul className="col-8 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px' }}>
                 <li className='nav-item pt-4'>

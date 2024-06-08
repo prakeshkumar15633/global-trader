@@ -203,20 +203,20 @@ function Home() {
 
     const images = [
         {
-            image:gallery1,
-            heading:'Shop Manpower Management',
-            body:"Maneuvering the shop's manpower entailed intricate scheduling, swift decision-making, and adept problem-solving. Balancing efficiency with adaptability, it underscored the pivotal role of management in delivering exceptional service."
+            image: gallery1,
+            heading: 'Shop Manpower Management',
+            body: "Maneuvering the shop's manpower entailed intricate scheduling, swift decision-making, and adept problem-solving. Balancing efficiency with adaptability, it underscored the pivotal role of management in delivering exceptional service."
         },
         ...(!width ? [
             {
-                image:gallery2,
-                heading:'Shop Opening',
-                body:"Launching the shop was an exhilarating endeavor, blending meticulous planning with bursts of spontaneity. Witnessing the doors finally open to welcome eager customers was a moment of pride, marking the beginning of a new chapter"
+                image: gallery2,
+                heading: 'Shop Opening',
+                body: "Launching the shop was an exhilarating endeavor, blending meticulous planning with bursts of spontaneity. Witnessing the doors finally open to welcome eager customers was a moment of pride, marking the beginning of a new chapter"
             },
             {
-                image:gallery3,
-                heading:'Bike Expo',
-                body:'Running the bike expo was a thrilling ride from start to finish. Balancing exhibitor logistics, attendee engagement, and event flow was a high-stakes adventure. But seeing enthusiasts connecting with the latest gear made all the work worthwhile.'
+                image: gallery3,
+                heading: 'Bike Expo',
+                body: 'Running the bike expo was a thrilling ride from start to finish. Balancing exhibitor logistics, attendee engagement, and event flow was a high-stakes adventure. But seeing enthusiasts connecting with the latest gear made all the work worthwhile.'
             }
         ] : [])
     ]
@@ -230,7 +230,7 @@ function Home() {
                             <source src={video} type='video/mp4' />
                         </video>
                         <div className='vid-text text-white' style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-                            <h1 className='text-center'>Welcome to our Global Traders Website</h1>
+                            <h1 className='text-center'>Welcome to our Company Website</h1>
                             <div style={{ marginTop: '50px' }}>
                                 <button className='btn btn-danger' onClick={() => navigate('services')}>
                                     Get Started
@@ -297,7 +297,7 @@ function Home() {
                     <br />
                     <div className='row row-cols-1 row-cols-md-3 mx-auto' style={{ width: '80vw' }}>
                         {services.map((service, index) => (
-                            <div style={{ position: 'relative', minHeight: '230px' ,border: '1px solid rgb(220,220,220)'}} onMouseEnter={() => {
+                            <div style={{ position: 'relative', minHeight: '230px', border: '1px solid rgb(220,220,220)' }} onMouseEnter={() => {
                                 let arr = [false, false, false, false, false, false, false, false, false]
                                 arr[service.ind - 1] = true
                                 console.log(arr)
@@ -365,7 +365,7 @@ function Home() {
                             <p className='justify'>
                                 At Global traders, we understand that every event is unique and requires careful planning, attention to detail, and creativity to ensure its success. From the initial consultation to the final execution, we work closely with each client to understand their vision, objectives, and preferences.
                             </p>
-                            <br/>
+                            <br />
                             <p className='justify'>
                                 Our dedicated event planners will tailor every aspect of your event to ensure it reflects your unique style and exceeds your expectations. The team will handle all the details, logistics, and coordination, allowing you to focus on what matters most enjoying your event and creating memories that last a lifetime.
                             </p>
@@ -373,6 +373,12 @@ function Home() {
                     </div>
                 </div>
             </div>
+            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
+                <div className='col-3 justify-content-end d-flex'>
+                    <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                </div>
+            </div>}
             {/* <div className='m-5'>
                 <div className='row row-cols-1 row-cols-sm-1 row-cols-md-2'>
                     <div className='col'>
@@ -395,7 +401,7 @@ function Home() {
                             {images.map((card, index) => (
                                 <div className="col text-white p-3">
                                     <div className='p-3 rounded rounded-3' style={{ backgroundColor: 'rgb(0,0,0,0.3)' }}>
-                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '150px', maxWidth:'100%' }} />
+                                        <img src={card.image} alt={`Image ${index}`} className='rounded-3 d-block mx-auto' style={{ height: '150px', maxWidth: '100%' }} />
                                         <h3 className='text-center mt-3'>{card.heading}</h3>
                                         <p>{card.body}</p>
                                     </div>
@@ -426,18 +432,12 @@ function Home() {
                     </div>
                 </div> */}
             </div>
-            {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                    <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
-                    <div className='col-3 justify-content-end d-flex'>
-                        <button className='btn d-block mx-auto px-5' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '20px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                    </div>
-                </div>}
-                {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                    <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss?<br /> Connect to our experts now.</h3>
-                    <div className='justify-content-end d-flex'>
-                        <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
-                    </div>
-                </div>}
+            {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
+                <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss?<br /> Connect to our experts now.</h3>
+                <div className='justify-content-end d-flex'>
+                    <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
+                </div>
+            </div>}
             <div className='m-3 p-3 rounded-3'>
                 <h1 className='text-center text-primary'>Collaboration with our company</h1>
                 <div className='row'>
