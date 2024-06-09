@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import Home from './components/Home/Home'
 import Services from "./components/Services/Services";
 import AboutUs from "./components/AboutUs/AboutUs";
@@ -87,7 +87,7 @@ function App() {
     return (
         <div>
             <RouterProvider router={router} />
-            <div className='p-1 rounded-circle' style={{ backgroundColor: '#0BF446', position: 'fixed', bottom: '10px', right: '10px' , zIndex:5}}>
+            <div className='p-1 rounded-circle' style={{ backgroundColor: '#0BF446', position: 'fixed', bottom: '10px', right: '10px', zIndex: 5 }}>
                 <a href="https://wa.me/918939169177" target="_blank" rel="noopener noreferrer" className="whatsapp-icon" style={{ color: 'inherit' }}>
                     <FaWhatsapp style={{ fontSize: '50px', color: 'white' }} />
                     {/* color: '#0BF446' */}

@@ -6,6 +6,11 @@ import Footer from './Footer/Footer'
 
 function RootLayout(){
     let path=useLocation().pathname.split('/')
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return(
         <div>
             <Navbar/>

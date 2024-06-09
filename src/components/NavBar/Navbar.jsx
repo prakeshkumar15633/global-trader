@@ -14,7 +14,7 @@ import { MdConnectWithoutContact } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
 import { MdInsertPhoto } from "react-icons/md";
 import logo from '../../assets/logo-without-text.png'
-import logotext from '../../assets/logo-text.png'
+import logotext from '../../assets/logo-text2.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -63,37 +63,37 @@ function Navbar() {
     return <nav className='m-2'>
         {dropDownFlag && <div className='row'>
             <div className='col'>
-                <div className='d-flex justify-content-center'>
+                <div className='d-flex justify-items-center' style={{alignItems:'center'}}>
                     <img className='p-1 d-blok mx-auto' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' ,borderRadius:'10px'}} />
-                    <img src={logotext} style={{ height: '85px',marginTop:'10px' }} />
+                    <img src={logotext} style={{ height: '20px',top:'10px' }} />
                 </div>
             </div>
-            <ul className="col-8 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px' }}>
+            <ul className="col-7 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px' }}>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="">
+                    <Link className='text-black p-2' to="">
                         Home
                     </Link></li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="services">
+                    <Link className='text-black p-2' to="services">
                         Services
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="gallery">
+                    <Link className='text-black p-2' to="gallery">
                         Gallery
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="aboutus">
+                    <Link className='text-black p-2' to="aboutus">
                         About us
                     </Link>
                 </li>
                 <li className='nav-item pt-4'>
-                    <Link className='text-black p-3' to="contact">
+                    <Link className='text-black p-2' to="contact">
                         Contact Us
                     </Link>
                 </li>
-                <li className='nav-item pt-4 p-3'>
+                <li className='nav-item pt-4 p-2'>
                     <Link className='requestacall rounded rounded-5 p-2' to="contact">
                         Request a call
                     </Link>
