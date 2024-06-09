@@ -85,7 +85,7 @@ function App() {
         }
     ]);
     return (
-        <div>
+        <div style={{position:''}}>
             <RouterProvider router={router} />
             <div className='p-1 rounded-circle' style={{ backgroundColor: '#0BF446', position: 'fixed', bottom: '10px', right: '10px', zIndex: 5 }}>
                 <a href="https://wa.me/918939169177" target="_blank" rel="noopener noreferrer" className="whatsapp-icon" style={{ color: 'inherit' }}>

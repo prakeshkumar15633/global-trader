@@ -60,12 +60,12 @@ function Navbar() {
     useEffect(() => {
         handleResize()
     })
-    return <nav className='m-2'>
+    return <nav>
         {dropDownFlag && <div className='row'>
             <div className='col'>
                 <div className='d-flex justify-items-center' style={{alignItems:'center'}}>
-                    <img className='p-1 d-blok mx-auto' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' ,borderRadius:'10px'}} />
-                    <img src={logotext} style={{ height: '20px',top:'10px' }} />
+                    <img className='p-1' src={logo} height={'100px'} style={{ left: '0! important', marginRight: 'auto !important' ,borderRadius:'10px'}} />
+                    <img src={logotext} style={{ width: 'calc(100% - 100px)',top:'10px' }} />
                 </div>
             </div>
             <ul className="col-7 nav d-flex text-center justify-content-end" style={{ fontSize: '1.3rem', padding: '10px' }}>
@@ -101,9 +101,9 @@ function Navbar() {
             </ul>
         </div>}
         {!dropDownFlag && <div>
-            <div className='row navbar-menu-container' style={{ padding: '10px' }}>
+            <div className='row navbar-menu-container'>
                 <div className='col-4'>
-                    <img className='p-1 rounded-4' src={logo} height={'70px'} style={{ right: 0 }} />
+                    <img className='p-1 rounded-3' src={logo} height={'70px'} style={{ right: 0 }} />
                 </div>
                 <div className='col-8 d-flex justify-content-end'>
                     <div className='nav-item pt-4 p-3'>
@@ -113,6 +113,9 @@ function Navbar() {
                     </div>
                     <HiOutlineBars3 style={{ color: 'black', fontSize: '30px', marginTop: '20px' }} onClick={() => setOpenMenu(true)} />
                 </div>
+            </div>
+            <div className='m-2'>
+                <img src={logotext} style={{ width:'100%',top:'10px' }} />
             </div>
             <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor='top' >
                 <Box sx={{ width: 250 }} role="presentation" onClick={() => setOpenMenu(false)} onKeyDown={() => setOpenMenu(false)}>
