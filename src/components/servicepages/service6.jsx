@@ -42,7 +42,7 @@ function Services() {
         <div className="services">
 
             <br />
-            <h2 className="fs-1">Product Launch</h2>
+            <h2 className="fs-1 text-primary">Product Launch</h2>
             <br />
             <br />
             <div className="about-us-container">

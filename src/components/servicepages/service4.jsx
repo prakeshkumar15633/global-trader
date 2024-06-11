@@ -33,7 +33,7 @@ function Services() {
 
 
                 <br />
-                <h2 className='fs-1'>Corporate activity</h2>
+                <h2 className='fs-1 text-primary'>Corporate activity</h2>
                 <br />
                 <br />
                 <div className="about-us-container">

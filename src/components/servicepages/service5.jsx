@@ -32,7 +32,7 @@ function Services() {
         <div className="services">
 
             <br />
-            <h2 className="fs-1">Road Show</h2>
+            <h2 className="fs-1 text-primary">Road Show</h2>
             <br />
            
             <br />

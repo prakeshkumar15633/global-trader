@@ -30,7 +30,7 @@ function Services() {
             </div>
             <div className="services">
                 <br />
-                <h2 className="fs-1">Event Organization</h2>
+                <h2 className="fs-1 text-primary">Event Organization</h2>
                 <br />
                 <br />
                 <div className="about-us-container">

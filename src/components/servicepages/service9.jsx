@@ -43,7 +43,7 @@ function Services() {
 
 
             <br />
-            <h2 className="fs-1">Cantervan indoor / outdoor</h2>
+            <h2 className="fs-1 text-primary">Cantervan indoor / outdoor</h2>
             <br />
         
             <br />

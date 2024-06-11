@@ -40,7 +40,7 @@ function Services() {
             </div>
             <div className="services">
                 <br />
-                <h2 className="fs-1">Brand Promotion</h2>
+                <h2 className="fs-1 text-primary">Brand Promotion</h2>
                 <br />
                 <br />
                 <div className="about-us-container">

@@ -33,7 +33,7 @@ function Services() {
 
 
                 <br />
-                <h2 className="fs-1">Marketing and Publicity</h2>
+                <h2 className="fs-1 text-primary">Marketing and Publicity</h2>
                 <br />
 
                 <br />

@@ -42,7 +42,7 @@ function Services() {
 
 
             <br />
-            <h2 className="fs-1">Manpower and Artist Coordination</h2>
+            <h2 className="fs-1 text-primary">Manpower and Artist Coordination</h2>
             <br />
             <br />
             <div className="about-us-container">
