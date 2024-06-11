@@ -4,7 +4,7 @@ import "./Footer.css";
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Footer() {
-    let path = useLocation().pathname
+    let path = useLocation().pathname.split('/')
     let navigate = useNavigate()
     let [width, setWidth] = useState(false)
     setTimeout(() => {
@@ -21,7 +21,7 @@ function Footer() {
     }, 100);
     return (
         <div>
-            {path!='/global-trader'&&<div>
+            {(path.length==2?true:path[2]=='')&&<div>
                 {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                     <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                     <div className='col-3 justify-content-end d-flex'>
