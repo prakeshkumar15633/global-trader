@@ -29,7 +29,7 @@ function Footer() {
                     </div>
                 </div>}
                 {width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
-                    <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss?<br /> Connect to our experts now.</h3>
+                    <h3 className='text-white text-center' style={{ fontSize: '20px', marginBottom: '10px' }}>Want to transform your event into a bliss? Connect to our experts now.</h3>
                     <div className='justify-content-end d-flex'>
                         <button className='btn d-block mx-auto' style={{ backgroundColor: 'rgb(0, 0, 117)', color: 'yellow', border: '2.5px solid yellow', fontSize: '15px' }} onClick={() => navigate('contact')}>Contact Us</button>
                     </div>
