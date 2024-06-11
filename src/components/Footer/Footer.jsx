@@ -21,7 +21,7 @@ function Footer() {
     }, 100);
     return (
         <div>
-            {(path.length==2?true:path[2]=='')&&<div>
+            {(path.length==2?true:path[2]==''?false:true)&&<div>
                 {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                     <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                     <div className='col-3 justify-content-end d-flex'>
