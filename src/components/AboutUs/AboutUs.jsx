@@ -187,7 +187,7 @@ const Home = (props) => {
                         <img className='d-block mx-auto' src={img4} style={{ width: '70%', borderRadius: '10px' }} />
                     </div>
                     <div className='col text-white rounded-3 m-3 p-3' style={{ width: `${width ? '90vw' : '40vw'}`, fontSize: '20px', backgroundColor: 'rgb(0,0,0,0.5)' }}>
-                        <h3>Event Planning</h3>
+                        <h3 className='text-center'>Event Planning</h3>
                         <p>We specialize in planning and coordinating events of all sizes. From corporate gatherings to intimate celebrations, we handle every detail to ensure a memorable experience for you and your guests.</p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ const Home = (props) => {
                         <img className='d-block mx-auto' src={img5} style={{ width: '70%', borderRadius: '10px' }} />
                     </div>}
                     <div className='col text-white rounded-3 m-3 p-3' style={{ width: `${width ? '90vw' : '40vw'}`, fontSize: '20px', backgroundColor: 'rgb(0,0,0,0.5)' }}>
-                        <h3>Venue Selection</h3>
+                        <h3 className='text-center'>Venue Selection</h3>
                         <p>Finding the perfect venue can make or break an event. Let us help you discover the ideal setting that suits your needs and captures the essence of your occasion, whether it's a rustic barn, elegant ballroom, or picturesque outdoor space.</p>
                     </div>
                     {!width && <div className='m-3 col' style={{ width: `${width ? '85vw' : '40vw'}`, borderRadius: '10px', margin: `${width ? '10px !important' : '0'}` }}>
@@ -208,7 +208,7 @@ const Home = (props) => {
                         <img className='d-block mx-auto' src={img6} style={{ width: '70%', borderRadius: '10px' }} />
                     </div>
                     <div className='col text-white rounded-3 m-3 p-3' style={{ width: `${width ? '90vw' : '40vw'}`, fontSize: '20px', backgroundColor: 'rgb(0,0,0,0.5)' }}>
-                        <h3>On-Site Management</h3>
+                        <h3 className='text-center'>On-Site Management</h3>
                         <p>Relax and enjoy your event while we take care of the logistics. Our experienced team will be on-site to oversee every aspect of the event, from setup to teardown, ensuring everything runs smoothly and according to plan.</p>
                     </div>
                 </div>

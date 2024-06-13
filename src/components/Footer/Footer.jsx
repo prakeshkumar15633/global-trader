@@ -21,7 +21,7 @@ function Footer() {
     }, 100);
     return (
         <div>
-            {(path.length==2?true:path[2]==''?false:true)&&<div>
+            {(path.length == 2 ? true : path[2] == '' ? false : true) && <div>
                 {!width && <div className='py-4 px-2 row my-3' style={{ backgroundColor: 'rgb(0, 0, 117)' }}>
                     <h3 className='col-9 text-white text-center'>Want to transform your event into a bliss? Connect to our experts now.</h3>
                     <div className='col-3 justify-content-end d-flex'>
@@ -116,7 +116,13 @@ function Footer() {
                             </div>
                             <h6><img src={logo} alt="EnviGo Logo" style={{ width: '150px', height: '150px' }} /></h6>
 
-                            <p> chennai chennai chennai chennai, <br /> chennai chennai chennai chennai,A</p>
+                            <p>
+                                19, Abhirami Nagar 5th St, CDN Nagar, Cmda Colony, Chennai, Tamil Nadu 600095
+                                <br/>
+                                Ph.No: +918939169177
+                                <br/>
+                                Gmail: globaltrader19@gmail.com
+                            </p>
                         </div>
                     </div>
 
