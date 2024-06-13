@@ -158,7 +158,7 @@ const ContactForm = () => {
                             <a className='col' href="tel:8939169177">
                                 <FaPhoneAlt className='d-block mx-auto' style={{ fontSize: width ? '7.5vw' : '2.8vw', marginTop:width?'1vw':'0.5vw' }} />
                             </a>
-                            <a className='col' href="https://www.google.com/maps/place/...">
+                            <a className='col' href="https://www.google.com/maps/place/13%C2%B003'42.5%22N+80%C2%B010'39.2%22E/@13.0618115,80.1749793,17z/data=!3m1!4b1!4m4!3m3!8m2!3d13.0618115!4d80.1775542?entry=ttu">
                                 <FaLocationDot className='d-block mx-auto' style={{ fontSize: width ? '7.5vw' : '2.8vw', marginTop:width?'1vw':'0.5vw' }} />
                             </a>
                         </div>
