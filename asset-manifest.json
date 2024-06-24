@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/global-trader/static/css/main.a30f89b0.css",
-    "main.js": "/global-trader/static/js/main.7c9872f5.js",
+    "main.js": "/global-trader/static/js/main.c818267f.js",
     "static/js/453.e44fba9c.chunk.js": "/global-trader/static/js/453.e44fba9c.chunk.js",
     "static/media/background-video.mp4": "/global-trader/static/media/background-video.8a78e088a9d5784fc633.mp4",
     "static/media/Services_vid.mp4": "/global-trader/static/media/Services_vid.254ff1cd7d0fb45478f9.mp4",
@@ -96,11 +96,11 @@
     "static/media/slick.woff": "/global-trader/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/global-trader/index.html",
     "main.a30f89b0.css.map": "/global-trader/static/css/main.a30f89b0.css.map",
-    "main.7c9872f5.js.map": "/global-trader/static/js/main.7c9872f5.js.map",
+    "main.c818267f.js.map": "/global-trader/static/js/main.c818267f.js.map",
     "453.e44fba9c.chunk.js.map": "/global-trader/static/js/453.e44fba9c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a30f89b0.css",
-    "static/js/main.7c9872f5.js"
+    "static/js/main.c818267f.js"
   ]
 }
