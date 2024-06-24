@@ -5,7 +5,6 @@ import img1 from '../../assets/Past-Events/pe1.jpeg';
 import img4 from '../../assets/Past-Events/pe4.jpeg';
 import img7 from '../../assets/Past-Events/pe7.jpeg';
 import img11 from '../../assets/Past-Events/pe11.jpeg';
-import img12 from '../../assets/Past-Events/pe12.jpeg';
 import img14 from '../../assets/Past-Events/pe14.jpeg';
 import img15 from '../../assets/Past-Events/pe15.jpeg';
 import img16 from '../../assets/Past-Events/pe16.jpeg';
@@ -32,16 +31,15 @@ function Gallery() {
 
     const images = [
         img1,
-        img4,
+        
         img7,
         img11,
-        img12,
         img14,
         img15,
         img16,
         img17,
-        img18,
-        img19,
+    
+        
         img20,
         img25,
         img29,
@@ -51,9 +49,10 @@ function Gallery() {
         img34,
         img35,
         img36,
+        img39,
         img37,
         img38,
-        img39,
+        
         img40
     ];
 
@@ -84,7 +83,7 @@ function Gallery() {
                             <div className="image-container" onClick={() => handleClick(index)}>
                                 <img src={imageUrl} alt={`Image ${index}`} className="img-fluid" />
                                 <h5 className='text-center'>Title</h5>
-                                <p>Date</p>
+    
                             </div>
                         </Col>
                     ))}
