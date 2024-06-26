@@ -30,30 +30,86 @@ function Gallery() {
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
     const images = [
-        img1,
-        
-        img7,
-        img11,
-        img14,
-        img15,
-        img16,
-        img17,
-    
-        
-        img20,
-        img25,
-        img29,
-        img30,
-        img31,
-        img32,
-        img34,
-        img35,
-        img36,
-        img39,
-        img37,
-        img38,
-        
-        img40
+        {
+            img:img1,
+            title:'Shop Opening'
+        },
+        {
+            img:img11,
+            title:'Essay Writing Competition'
+        },
+        {
+            img:img14,
+            title:'Birthday Party'
+        },
+        {
+            img:img15,
+            title:'Promotion Party'
+        },
+        {
+            img:img16,
+            title:'Campaign'
+        },
+        {
+            img:img17,
+            title:'Bike Expo'
+        },
+        {
+            img:img7,
+            title:'Beverage Promotion'
+        },
+        {
+            img:img20,
+            title:'Fertilizer Promotion'
+        },
+        {
+            img:img25,
+            title:'Sankranti Festival'
+        },
+        {
+            img:img29,
+            title:'Sankranti Festival'
+        },
+        {
+            img:img30,
+            title:'Christmas'
+        },
+        {
+            img:img31,
+            title:'Campaign'
+        },
+        {
+            img:img32,
+            title:'Catering'
+        },
+        {
+            img:img34,
+            title:'Electronic Show'
+        },
+        {
+            img:img35,
+            title:'Campaign'
+        },
+        {
+            img:img36,
+            title:'Beverage Promotion'
+        },
+        {
+            img:img39,
+            title:'Beverage Promotion'
+        },
+        {
+            img:img37,
+            title:'Essay Competetion'
+        },
+        {
+            img:img38,
+            title:'Annual Day'
+        },
+        {
+            img:img40,
+            title:'Bike Expo'
+        }
     ];
 
     const handleClick = (index) => {
@@ -78,12 +134,11 @@ function Gallery() {
             </div>
             <Container>
                 <Row>
-                    {images.map((imageUrl, index) => (
+                    {images.map((image, index) => (
                         <Col key={index} xs={6} md={4} lg={3}>
                             <div className="image-container" onClick={() => handleClick(index)}>
-                                <img src={imageUrl} alt={`Image ${index}`} className="img-fluid" />
-                                <h5 className='text-center'>Title</h5>
-    
+                                <img src={image.img} alt={`Image ${index}`} className="img-fluid" />
+                                <h5 className='text-center'>{image.title}</h5>
                             </div>
                         </Col>
                     ))}
