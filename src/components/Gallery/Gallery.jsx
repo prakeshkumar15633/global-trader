@@ -36,7 +36,7 @@ function Gallery() {
         },
         {
             img:img11,
-            title:'Essay Writing Competition'
+            title:'Product Promotion'
         },
         {
             img:img14,
@@ -100,7 +100,7 @@ function Gallery() {
         },
         {
             img:img37,
-            title:'Essay Competetion'
+            title:'Product Promotion'
         },
         {
             img:img38,
